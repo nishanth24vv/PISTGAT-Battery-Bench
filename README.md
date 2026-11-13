@@ -2,7 +2,7 @@
 
 Unified Lithium-Ion State of Health (SOH) Benchmark and Interactive 3D Pack Visualizer.
 
-[![CI Status](https://img.shields.io/badge/CI-Passing-emerald.svg)](https://github.com/pistgat-battery-bench/pistgat-battery-bench/actions)
+[![CI Status](https://img.shields.io/badge/CI-Passing-emerald.svg)](https://github.com/nishanth24vv/PISTGAT-Battery-Bench/actions)
 [![Python Version](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Live Demo](https://img.shields.io/badge/Vercel-Live%203D%20Demo-brightgreen.svg)](https://pistgat-bench.vercel.app)
@@ -31,8 +31,8 @@ Clone the repository and execute sample evaluations within a local virtual envir
 
 ```bash
 # 1. Clone repository
-git clone https://github.com/pistgat-battery-bench/pistgat-battery-bench.git
-cd pistgat-battery-bench
+git clone https://github.com/nishanth24vv/PISTGAT-Battery-Bench.git
+cd PISTGAT-Battery-Bench
 
 # 2. Install package in editable mode
 pip install -e .
@@ -144,7 +144,7 @@ If you use this benchmark suite or visualizer in your research, please cite:
 @software{pistgat_battery_bench,
   author = {PISTGAT-Battery-Bench Contributors},
   title = {PISTGAT-Battery-Bench: Unified Li-Ion SOH Benchmark and 3D Pack Visualizer},
-  url = {https://github.com/pistgat-battery-bench/pistgat-battery-bench},
+  url = {https://github.com/nishanth24vv/PISTGAT-Battery-Bench},
   year = {2026}
 }
 ```

@@ -185,7 +185,7 @@ export function App() {
           </button>
 
           <a
-            href="https://github.com/pistgat-battery-bench/pistgat-battery-bench"
+            href="https://github.com/nishanth24vv/PISTGAT-Battery-Bench"
             target="_blank"
             rel="noreferrer"
             className="p-2 rounded-xl border border-slate-700 bg-slate-800/80 hover:bg-slate-700 text-slate-300 hover:text-white transition-all"
