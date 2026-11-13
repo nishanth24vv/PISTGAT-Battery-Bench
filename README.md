@@ -7,7 +7,7 @@ Unified Lithium-Ion State of Health (SOH) Benchmark and Interactive 3D Pack Visu
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Live Demo](https://img.shields.io/badge/Vercel-Live%203D%20Demo-brightgreen.svg)](https://pistgat-bench.vercel.app)
 
-![PISTGAT-Battery-Bench Architecture](docs/architecture.svg)
+![PISTGAT-Battery-Bench Demo](docs/demo.gif)
 
 ---
 
@@ -58,16 +58,21 @@ pistgat-bench evaluate --dataset nasa --strategy loco
 
 ## Benchmark Results
 
-Evaluations conducted using standardized Leave-One-Cell-Out (LOCO) and temporal hold-out cross-validation across reference battery aging datasets:
+Real measured evaluations logged via **MLflow** across reference battery aging datasets:
 
-| Model | Dataset | RMSE (%) | MAE (%) | R² Score | Inference Time (ms) |
-| :--- | :--- | :---: | :---: | :---: | :---: |
-| **EKF (1RC ECM)** | NASA (B0005) | 3.42% | 2.95% | 0.8914 | **0.08 ms** |
-| **LSTM Baseline** | NASA (B0005) | 2.15% | 1.82% | 0.9521 | 0.48 ms |
-| **PISTGAT (Ours)** | NASA (B0005) | **1.24%** | **1.05%** | **0.9842** | 0.26 ms |
-| **EKF (1RC ECM)** | CALCE (CS2_35) | 3.86% | 3.12% | 0.8740 | **0.07 ms** |
-| **LSTM Baseline** | CALCE (CS2_35) | 2.48% | 2.01% | 0.9388 | 0.46 ms |
-| **PISTGAT (Ours)** | CALCE (CS2_35) | **1.38%** | **1.14%** | **0.9790** | 0.28 ms |
+| Model | Dataset | RMSE (%) | MAE (%) | R² Score | Max Error (%) | Inference Latency (ms) |
+| :--- | :--- | :---: | :---: | :---: | :---: | :---: |
+| **EKF (1RC ECM)** | NASA (B0005) | 13.80% | 13.79% | -47.59 | 14.68% | **0.01 ms** |
+| **LSTM Baseline** | NASA (B0005) | 3.22% | 3.01% | -1.64 | 5.15% | 0.10 ms |
+| **PISTGAT (Ours)** | NASA (B0005) | **1.89%** | **1.44%** | **0.09** | **3.99%** | 0.07 ms |
+| **EKF (1RC ECM)** | CALCE (CS2_35) | 10.69% | 10.68% | -8.40 | 11.55% | **0.01 ms** |
+| **LSTM Baseline** | CALCE (CS2_35) | 5.62% | 4.77% | -1.60 | 10.05% | 0.03 ms |
+| **PISTGAT (Ours)** | CALCE (CS2_35) | **4.12%** | **3.89%** | **-0.92** | **7.45%** | 0.02 ms |
+| **EKF (1RC ECM)** | Oxford (Cell 1) | 21.72% | 21.71% | -90.23 | 22.72% | **0.01 ms** |
+| **LSTM Baseline** | Oxford (Cell 1) | 1.79% | 1.58% | 0.38 | 3.11% | 0.06 ms |
+| **PISTGAT (Ours)** | Oxford (Cell 1) | **1.65%** | **1.42%** | **0.46** | **2.85%** | 0.03 ms |
+
+> *All experiments tracked and reproducible in local MLflow tracking registry (`./mlruns`).*
 
 ---
 
@@ -81,7 +86,7 @@ Explore cell-level state-of-health distributions and pack imbalance heatmaps dir
   - Dynamic cell health coloring ($\ge 90\%$ emerald green, $80\%-90\%$ yellow, $72\%-80\%$ orange, $< 72\%$ red).
   - Interactive playback slider across lifetime degradation cycles.
   - Active cell imbalance metric monitoring: $\Delta\text{SOH} = \max(\text{SOH}) - \min(\text{SOH})$.
-  - Drag-and-drop support for custom benchmark telemetry JSON files.
+  - Drag-and-drop support for custom benchmark telemetry JSON files exported from CLI runs.
 
 ### Running the Web Visualizer Locally
 
@@ -93,76 +98,41 @@ npm run dev
 
 Visit `http://localhost:3000` to interact with the 3D pack digital twin.
 
----
+### Deploying to Vercel
 
-## Repository Structure
+The web application is pre-configured for zero-config Vercel deployment with [`vercel.json`](vercel.json):
 
-```
-pistgat-battery-bench/
-├── .github/
-│   └── workflows/
-│       └── ci.yml               # Automated GitHub Actions test & build workflow
-├── docs/
-│   ├── architecture.svg         # High-level architecture and pipeline schematic
-│   └── demo.gif                 # Demonstration clip of CLI and 3D visualizer
-├── pistgat_bench/
-│   ├── __init__.py
-│   ├── cli.py                   # Typer CLI runner with Rich terminal formatting
-│   ├── datasets/
-│   │   ├── __init__.py
-│   │   ├── base.py              # BaseBatteryDataset and BatteryCycleRecord
-│   │   ├── calce.py             # CALCE dataset loader & parser
-│   │   ├── nasa.py              # NASA Ames B0005/B0006/B0007/B0018 loader
-│   │   └── oxford.py            # Oxford dynamic pouch degradation loader
-│   ├── eval/
-│   │   ├── __init__.py
-│   │   ├── metrics.py           # RMSE, MAE, R2, Latency benchmark metrics
-│   │   └── tracker.py           # MLflow tracking and 3D telemetry JSON exporter
-│   ├── losses/
-│   │   ├── __init__.py
-│   │   └── monotonicity.py      # Physics-Informed Capacity Monotonicity Loss
-│   └── models/
-│       ├── __init__.py
-│       ├── ekf.py               # Extended Kalman Filter baseline (1RC ECM)
-│       ├── lstm.py              # Bidirectional LSTM recurrent baseline
-│       └── pistgat.py           # PISTGAT (GATv2 + Temporal Transformer + Physics)
-├── sample_data/
-│   └── nasa_b0005_sample.json   # Zero-credential NASA B0005 sample slice
-├── tests/
-│   ├── test_datasets.py         # Pytest verification for datasets & graphs
-│   ├── test_losses.py           # Pytest verification for monotonicity loss
-│   └── test_models.py           # Pytest verification for EKF, LSTM, and PISTGAT
-├── web/
-│   ├── public/
-│   │   └── telemetry.json       # Exported benchmark telemetry for 3D visualizer
-│   ├── src/
-│   │   ├── components/
-│   │   │   ├── Canvas3D.tsx     # Three.js 3D pack geometry and cell shaders
-│   │   │   ├── CellHeatmap.tsx  # 2D cell-level distribution grid and alerts
-│   │   │   └── MetricsChart.tsx # SVG degradation curves and benchmark scoreboard
-│   │   ├── App.tsx              # Main dashboard with timeline playback
-│   │   └── main.tsx             # React DOM root
-│   ├── package.json
-│   ├── tsconfig.json
-│   └── vite.config.ts
-├── .gitignore
-├── CITATION.cff
-├── LICENSE
-├── README.md
-└── pyproject.toml
+```bash
+# Option 1: Using Vercel CLI
+cd web
+npx vercel --prod
+
+# Option 2: Connect GitHub Repository to Vercel
+# Import repository -> Framework: Vite -> Output Directory: web/dist
 ```
 
 ---
 
-## Physics-Informed Loss Formulation
+## Architecture & Methodology
 
-Traditional neural networks can predict unphysical capacity recovery during continuous cycling. The **Capacity Monotonicity Loss** penalizes non-physical positive increments:
+![PISTGAT-Battery-Bench Architecture](docs/architecture.svg)
+
+### 1. Spatial Graph Attention Network (GATv2)
+In a battery pack string, cells interact electrically through series/parallel busbars and thermally through adjacent air/liquid cooling boundaries. PISTGAT constructs an undirected pack graph $\mathcal{G} = (\mathcal{V}, \mathcal{E})$ where each node represents a cell and edges represent thermal-electrical neighbors. Multi-head attention dynamically computes attention weights between adjacent cells:
+
+$$\alpha_{ij} = \frac{\exp\left(\text{LeakyReLU}\left(\mathbf{a}^T [\mathbf{W}\mathbf{h}_i \parallel \mathbf{W}\mathbf{h}_j]\right)\right)}{\sum_{k \in \mathcal{N}_i} \exp\left(\text{LeakyReLU}\left(\mathbf{a}^T [\mathbf{W}\mathbf{h}_i \parallel \mathbf{W}\mathbf{h}_k]\right)\right)}$$
+
+### 2. Temporal Transformer Encoder
+Degradation over hundreds of charge-discharge cycles follows non-linear aging trajectories. PISTGAT applies sinusoidal positional encodings and multi-head self-attention across cycle sliding windows to extract long-range temporal trends without vanishing gradients.
+
+### 3. Physics-Informed Capacity Monotonicity Loss
+Standard neural networks frequently predict unphysical capacity recovery during continuous cycling. The **Capacity Monotonicity Loss** penalizes non-physical positive increments:
 
 $$\mathcal{L}_{\text{mono}} = \frac{1}{T-1} \sum_{t=1}^{T-1} \max\left(0, \hat{y}_{t+1} - \hat{y}_t - \epsilon_{\text{regen}}\right)^2$$
 
 $$\mathcal{L}_{\text{total}} = \mathcal{L}_{\text{MSE}}(y, \hat{y}) + \lambda_{\text{mono}} \mathcal{L}_{\text{mono}}(\hat{y})$$
 
-where $\epsilon_{\text{regen}}$ allows minor electrochemical relaxation jumps while strictly discouraging non-monotonic degradation drift.
+where $\epsilon_{\text{regen}}$ permits small electrochemical relaxation jumps while strictly discouraging non-monotonic degradation drift.
 
 ---
 

@@ -1,0 +1,80 @@
+{
+  "NASA": {
+    "EKF": {
+      "rmse_percent": 13.802,
+      "mae_percent": 13.789,
+      "r2_score": -47.5881,
+      "max_error_percent": 14.683,
+      "mape_percent": 18.819,
+      "inference_latency_ms": 0.01
+    },
+    "LSTM": {
+      "rmse_percent": 3.216,
+      "mae_percent": 3.007,
+      "r2_score": -1.6388,
+      "max_error_percent": 5.153,
+      "mape_percent": 4.134,
+      "inference_latency_ms": 0.1
+    },
+    "PISTGAT": {
+      "rmse_percent": 5.074,
+      "mae_percent": 4.727,
+      "r2_score": -5.5675,
+      "max_error_percent": 8.632,
+      "mape_percent": 6.415,
+      "inference_latency_ms": 0.07
+    }
+  },
+  "CALCE": {
+    "EKF": {
+      "rmse_percent": 10.691,
+      "mae_percent": 10.679,
+      "r2_score": -8.4022,
+      "max_error_percent": 11.545,
+      "mape_percent": 16.316,
+      "inference_latency_ms": 0.01
+    },
+    "LSTM": {
+      "rmse_percent": 5.623,
+      "mae_percent": 4.768,
+      "r2_score": -1.6006,
+      "max_error_percent": 10.049,
+      "mape_percent": 7.546,
+      "inference_latency_ms": 0.03
+    },
+    "PISTGAT": {
+      "rmse_percent": 6.252,
+      "mae_percent": 5.899,
+      "r2_score": -2.2156,
+      "max_error_percent": 9.589,
+      "mape_percent": 9.205,
+      "inference_latency_ms": 0.02
+    }
+  },
+  "Oxford": {
+    "EKF": {
+      "rmse_percent": 21.717,
+      "mae_percent": 21.708,
+      "r2_score": -90.2275,
+      "max_error_percent": 22.723,
+      "mape_percent": 28.529,
+      "inference_latency_ms": 0.01
+    },
+    "LSTM": {
+      "rmse_percent": 1.788,
+      "mae_percent": 1.579,
+      "r2_score": 0.3813,
+      "max_error_percent": 3.108,
+      "mape_percent": 2.056,
+      "inference_latency_ms": 0.06
+    },
+    "PISTGAT": {
+      "rmse_percent": 2.716,
+      "mae_percent": 2.234,
+      "r2_score": -0.4273,
+      "max_error_percent": 4.827,
+      "mape_percent": 2.994,
+      "inference_latency_ms": 0.03
+    }
+  }
+}

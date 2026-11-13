@@ -1,9 +1,9 @@
 {
   "metadata": {
-    "dataset": "NASA",
+    "dataset": "NASA Prognostics Repository",
     "pack_configuration": "5S1P",
     "nominal_capacity_ah": 2.0,
-    "chemistry": "LiCoO2 / NMC",
+    "chemistry": "LiCoO2 (LCO)",
     "cells_count": 5
   },
   "benchmark_results": {
@@ -13,2302 +13,2603 @@
       "r2_score": -47.5881,
       "max_error_percent": 14.683,
       "mape_percent": 18.819,
-      "inference_latency_ms": 0.06
+      "inference_latency_ms": 0.01
     },
     "LSTM": {
-      "rmse_percent": 7.919,
-      "mae_percent": 7.483,
-      "r2_score": -14.9971,
-      "max_error_percent": 11.255,
-      "mape_percent": 10.277,
-      "inference_latency_ms": 0.44
+      "rmse_percent": 3.216,
+      "mae_percent": 3.007,
+      "r2_score": -1.6388,
+      "max_error_percent": 5.153,
+      "mape_percent": 4.134,
+      "inference_latency_ms": 0.1
     },
     "PISTGAT": {
-      "rmse_percent": 1.885,
-      "mae_percent": 1.442,
-      "r2_score": 0.0935,
-      "max_error_percent": 3.988,
-      "mape_percent": 2.007,
-      "inference_latency_ms": 0.36
+      "rmse_percent": 5.074,
+      "mae_percent": 4.727,
+      "r2_score": -5.5675,
+      "max_error_percent": 8.632,
+      "mape_percent": 6.415,
+      "inference_latency_ms": 0.07
     }
   },
   "timeline": [
     {
       "cycle": 1,
-      "pack_soh_mean": 0.8725,
-      "pack_imbalance_delta": 0.1118,
+      "pack_soh_mean": 0.8904,
+      "pack_imbalance_delta": 0.099,
       "max_temp_c": 33.94,
       "cells": {
         "B0005": {
-          "soh_pred": 0.813,
+          "soh_pred": 0.9353,
           "soh_true": 0.9353,
           "temperature_c": 33.94,
           "resistance_ohm": 0.08317,
-          "soh_deviation": -0.0595
+          "soh_deviation": 0.0449
         },
         "Cell_1 (B0005)": {
-          "soh_pred": 0.9248,
+          "soh_pred": 0.9212,
           "soh_true": 0.935,
           "temperature_c": 24.27,
           "resistance_ohm": 0.0831,
-          "soh_deviation": 0.0523
+          "soh_deviation": 0.0308
         },
         "Cell_2 (B0006)": {
-          "soh_pred": 0.9038,
+          "soh_pred": 0.8948,
           "soh_true": 0.923,
           "temperature_c": 27.43,
           "resistance_ohm": 0.08827,
-          "soh_deviation": 0.0313
+          "soh_deviation": 0.0044
         },
         "Cell_3 (B0007)": {
-          "soh_pred": 0.8699,
+          "soh_pred": 0.8646,
           "soh_true": 0.9092,
           "temperature_c": 30.43,
           "resistance_ohm": 0.09343,
-          "soh_deviation": -0.0026
+          "soh_deviation": -0.0259
         },
         "Cell_4 (B0018)": {
-          "soh_pred": 0.8509,
+          "soh_pred": 0.8363,
           "soh_true": 0.8958,
           "temperature_c": 32.81,
           "resistance_ohm": 0.0986,
-          "soh_deviation": -0.0215
+          "soh_deviation": -0.0542
         }
       }
     },
     {
       "cycle": 2,
-      "pack_soh_mean": 0.8657,
-      "pack_imbalance_delta": 0.1046,
+      "pack_soh_mean": 0.8843,
+      "pack_imbalance_delta": 0.1016,
       "max_temp_c": 33.77,
       "cells": {
         "B0005": {
-          "soh_pred": 0.8125,
+          "soh_pred": 0.9306,
           "soh_true": 0.9306,
           "temperature_c": 33.77,
           "resistance_ohm": 0.08457,
-          "soh_deviation": -0.0532
+          "soh_deviation": 0.0463
         },
         "Cell_1 (B0005)": {
-          "soh_pred": 0.9171,
+          "soh_pred": 0.9142,
           "soh_true": 0.9312,
           "temperature_c": 23.36,
           "resistance_ohm": 0.0842,
-          "soh_deviation": 0.0514
+          "soh_deviation": 0.0298
         },
         "Cell_2 (B0006)": {
-          "soh_pred": 0.8924,
+          "soh_pred": 0.888,
           "soh_true": 0.9188,
           "temperature_c": 26.83,
           "resistance_ohm": 0.08953,
-          "soh_deviation": 0.0267
+          "soh_deviation": 0.0037
         },
         "Cell_3 (B0007)": {
-          "soh_pred": 0.8664,
+          "soh_pred": 0.8599,
           "soh_true": 0.9043,
           "temperature_c": 29.07,
           "resistance_ohm": 0.09486,
-          "soh_deviation": 0.0007
+          "soh_deviation": -0.0244
         },
         "Cell_4 (B0018)": {
-          "soh_pred": 0.8402,
+          "soh_pred": 0.829,
           "soh_true": 0.8897,
           "temperature_c": 32.43,
           "resistance_ohm": 0.10019,
-          "soh_deviation": -0.0255
+          "soh_deviation": -0.0554
         }
       }
     },
     {
       "cycle": 3,
-      "pack_soh_mean": 0.8622,
-      "pack_imbalance_delta": 0.1041,
+      "pack_soh_mean": 0.8792,
+      "pack_imbalance_delta": 0.1009,
       "max_temp_c": 34.17,
       "cells": {
         "B0005": {
-          "soh_pred": 0.8108,
+          "soh_pred": 0.9255,
           "soh_true": 0.9255,
           "temperature_c": 34.17,
           "resistance_ohm": 0.08592,
-          "soh_deviation": -0.0513
+          "soh_deviation": 0.0463
         },
         "Cell_1 (B0005)": {
-          "soh_pred": 0.915,
+          "soh_pred": 0.9112,
           "soh_true": 0.9271,
           "temperature_c": 23.91,
           "resistance_ohm": 0.0853,
-          "soh_deviation": 0.0528
+          "soh_deviation": 0.032
         },
         "Cell_2 (B0006)": {
-          "soh_pred": 0.8883,
+          "soh_pred": 0.8845,
           "soh_true": 0.9139,
           "temperature_c": 27.04,
           "resistance_ohm": 0.0908,
-          "soh_deviation": 0.0261
+          "soh_deviation": 0.0053
         },
         "Cell_3 (B0007)": {
-          "soh_pred": 0.8613,
+          "soh_pred": 0.85,
           "soh_true": 0.8983,
           "temperature_c": 29.67,
           "resistance_ohm": 0.09629,
-          "soh_deviation": -0.0009
+          "soh_deviation": -0.0291
         },
         "Cell_4 (B0018)": {
-          "soh_pred": 0.8355,
+          "soh_pred": 0.8246,
           "soh_true": 0.8838,
           "temperature_c": 33.2,
           "resistance_ohm": 0.10179,
-          "soh_deviation": -0.0267
+          "soh_deviation": -0.0546
         }
       }
     },
     {
       "cycle": 4,
-      "pack_soh_mean": 0.8603,
-      "pack_imbalance_delta": 0.102,
+      "pack_soh_mean": 0.8746,
+      "pack_imbalance_delta": 0.1025,
       "max_temp_c": 34.14,
       "cells": {
         "B0005": {
-          "soh_pred": 0.8098,
+          "soh_pred": 0.921,
           "soh_true": 0.921,
           "temperature_c": 34.14,
           "resistance_ohm": 0.08741,
-          "soh_deviation": -0.0506
+          "soh_deviation": 0.0464
         },
         "Cell_1 (B0005)": {
-          "soh_pred": 0.9118,
+          "soh_pred": 0.9041,
           "soh_true": 0.9226,
           "temperature_c": 23.79,
           "resistance_ohm": 0.0864,
-          "soh_deviation": 0.0515
+          "soh_deviation": 0.0295
         },
         "Cell_2 (B0006)": {
-          "soh_pred": 0.8895,
+          "soh_pred": 0.8804,
           "soh_true": 0.9091,
           "temperature_c": 27.16,
           "resistance_ohm": 0.09206,
-          "soh_deviation": 0.0292
+          "soh_deviation": 0.0058
         },
         "Cell_3 (B0007)": {
-          "soh_pred": 0.8613,
+          "soh_pred": 0.8488,
           "soh_true": 0.8938,
           "temperature_c": 30.06,
           "resistance_ohm": 0.09772,
-          "soh_deviation": 0.001
+          "soh_deviation": -0.0258
         },
         "Cell_4 (B0018)": {
-          "soh_pred": 0.8292,
+          "soh_pred": 0.8185,
           "soh_true": 0.877,
           "temperature_c": 32.56,
           "resistance_ohm": 0.10338,
-          "soh_deviation": -0.0311
+          "soh_deviation": -0.056
         }
       }
     },
     {
       "cycle": 5,
-      "pack_soh_mean": 0.8525,
-      "pack_imbalance_delta": 0.1003,
+      "pack_soh_mean": 0.8696,
+      "pack_imbalance_delta": 0.1071,
       "max_temp_c": 34.12,
       "cells": {
         "B0005": {
-          "soh_pred": 0.8067,
+          "soh_pred": 0.9169,
           "soh_true": 0.9169,
           "temperature_c": 34.12,
           "resistance_ohm": 0.08865,
-          "soh_deviation": -0.0458
+          "soh_deviation": 0.0473
         },
         "Cell_1 (B0005)": {
-          "soh_pred": 0.907,
+          "soh_pred": 0.9042,
           "soh_true": 0.9181,
           "temperature_c": 24.77,
           "resistance_ohm": 0.0875,
-          "soh_deviation": 0.0545
+          "soh_deviation": 0.0346
         },
         "Cell_2 (B0006)": {
-          "soh_pred": 0.8756,
+          "soh_pred": 0.8724,
           "soh_true": 0.9039,
           "temperature_c": 27.29,
           "resistance_ohm": 0.09333,
-          "soh_deviation": 0.0231
+          "soh_deviation": 0.0028
         },
         "Cell_3 (B0007)": {
-          "soh_pred": 0.8508,
+          "soh_pred": 0.8447,
           "soh_true": 0.8879,
           "temperature_c": 29.95,
           "resistance_ohm": 0.09915,
-          "soh_deviation": -0.0017
+          "soh_deviation": -0.0249
         },
         "Cell_4 (B0018)": {
-          "soh_pred": 0.8223,
+          "soh_pred": 0.8098,
           "soh_true": 0.871,
           "temperature_c": 32.94,
           "resistance_ohm": 0.10497,
-          "soh_deviation": -0.0302
+          "soh_deviation": -0.0598
         }
       }
     },
     {
       "cycle": 6,
-      "pack_soh_mean": 0.8504,
-      "pack_imbalance_delta": 0.1033,
+      "pack_soh_mean": 0.8655,
+      "pack_imbalance_delta": 0.1074,
       "max_temp_c": 33.72,
       "cells": {
         "B0005": {
-          "soh_pred": 0.805,
+          "soh_pred": 0.9122,
           "soh_true": 0.9122,
           "temperature_c": 33.72,
           "resistance_ohm": 0.08973,
-          "soh_deviation": -0.0454
+          "soh_deviation": 0.0467
         },
         "Cell_1 (B0005)": {
-          "soh_pred": 0.9083,
+          "soh_pred": 0.9009,
           "soh_true": 0.9134,
           "temperature_c": 23.98,
           "resistance_ohm": 0.0886,
-          "soh_deviation": 0.0579
+          "soh_deviation": 0.0355
         },
         "Cell_2 (B0006)": {
-          "soh_pred": 0.8738,
+          "soh_pred": 0.8706,
           "soh_true": 0.8995,
           "temperature_c": 26.89,
           "resistance_ohm": 0.09459,
-          "soh_deviation": 0.0234
+          "soh_deviation": 0.0052
         },
         "Cell_3 (B0007)": {
-          "soh_pred": 0.8486,
+          "soh_pred": 0.8387,
           "soh_true": 0.8826,
           "temperature_c": 29.94,
           "resistance_ohm": 0.10058,
-          "soh_deviation": -0.0017
+          "soh_deviation": -0.0267
         },
         "Cell_4 (B0018)": {
-          "soh_pred": 0.8162,
+          "soh_pred": 0.8048,
           "soh_true": 0.8655,
           "temperature_c": 33.24,
           "resistance_ohm": 0.10657,
-          "soh_deviation": -0.0342
+          "soh_deviation": -0.0606
         }
       }
     },
     {
       "cycle": 7,
-      "pack_soh_mean": 0.8455,
-      "pack_imbalance_delta": 0.0904,
+      "pack_soh_mean": 0.8594,
+      "pack_imbalance_delta": 0.1082,
       "max_temp_c": 34.12,
       "cells": {
         "B0005": {
-          "soh_pred": 0.804,
+          "soh_pred": 0.9081,
           "soh_true": 0.9081,
           "temperature_c": 34.12,
           "resistance_ohm": 0.09088,
-          "soh_deviation": -0.0415
+          "soh_deviation": 0.0487
         },
         "Cell_1 (B0005)": {
-          "soh_pred": 0.8944,
+          "soh_pred": 0.8949,
           "soh_true": 0.9093,
           "temperature_c": 23.86,
           "resistance_ohm": 0.0897,
-          "soh_deviation": 0.0489
+          "soh_deviation": 0.0355
         },
         "Cell_2 (B0006)": {
-          "soh_pred": 0.8763,
+          "soh_pred": 0.8629,
           "soh_true": 0.894,
           "temperature_c": 27.36,
           "resistance_ohm": 0.09586,
-          "soh_deviation": 0.0308
+          "soh_deviation": 0.0034
         },
         "Cell_3 (B0007)": {
-          "soh_pred": 0.8427,
+          "soh_pred": 0.8313,
           "soh_true": 0.8773,
           "temperature_c": 29.46,
           "resistance_ohm": 0.10201,
-          "soh_deviation": -0.0028
+          "soh_deviation": -0.0281
         },
         "Cell_4 (B0018)": {
-          "soh_pred": 0.81,
+          "soh_pred": 0.7999,
           "soh_true": 0.8597,
           "temperature_c": 32.92,
           "resistance_ohm": 0.10816,
-          "soh_deviation": -0.0355
+          "soh_deviation": -0.0595
         }
       }
     },
     {
       "cycle": 8,
-      "pack_soh_mean": 0.8412,
-      "pack_imbalance_delta": 0.0868,
+      "pack_soh_mean": 0.8359,
+      "pack_imbalance_delta": 0.0989,
       "max_temp_c": 33.96,
       "cells": {
         "B0005": {
-          "soh_pred": 0.8024,
+          "soh_pred": 0.8079,
           "soh_true": 0.9041,
           "temperature_c": 33.96,
           "resistance_ohm": 0.09206,
-          "soh_deviation": -0.0388
+          "soh_deviation": -0.028
         },
         "Cell_1 (B0005)": {
-          "soh_pred": 0.8892,
+          "soh_pred": 0.8916,
           "soh_true": 0.9045,
           "temperature_c": 23.75,
           "resistance_ohm": 0.0908,
-          "soh_deviation": 0.0479
+          "soh_deviation": 0.0557
         },
         "Cell_2 (B0006)": {
-          "soh_pred": 0.8661,
+          "soh_pred": 0.8609,
           "soh_true": 0.8898,
           "temperature_c": 27.14,
           "resistance_ohm": 0.09712,
-          "soh_deviation": 0.0248
+          "soh_deviation": 0.0251
         },
         "Cell_3 (B0007)": {
-          "soh_pred": 0.8369,
+          "soh_pred": 0.8263,
           "soh_true": 0.8721,
           "temperature_c": 30.21,
           "resistance_ohm": 0.10344,
-          "soh_deviation": -0.0044
+          "soh_deviation": -0.0096
         },
         "Cell_4 (B0018)": {
-          "soh_pred": 0.8117,
+          "soh_pred": 0.7927,
           "soh_true": 0.8538,
           "temperature_c": 32.68,
           "resistance_ohm": 0.10976,
-          "soh_deviation": -0.0295
+          "soh_deviation": -0.0432
         }
       }
     },
     {
       "cycle": 9,
-      "pack_soh_mean": 0.8359,
-      "pack_imbalance_delta": 0.0885,
+      "pack_soh_mean": 0.8343,
+      "pack_imbalance_delta": 0.0979,
       "max_temp_c": 33.64,
       "cells": {
         "B0005": {
-          "soh_pred": 0.8002,
+          "soh_pred": 0.8182,
           "soh_true": 0.8993,
           "temperature_c": 33.64,
           "resistance_ohm": 0.09341,
-          "soh_deviation": -0.0357
+          "soh_deviation": -0.016
         },
         "Cell_1 (B0005)": {
-          "soh_pred": 0.8884,
+          "soh_pred": 0.8852,
           "soh_true": 0.9002,
           "temperature_c": 24.02,
           "resistance_ohm": 0.0919,
-          "soh_deviation": 0.0525
+          "soh_deviation": 0.0509
         },
         "Cell_2 (B0006)": {
-          "soh_pred": 0.8603,
+          "soh_pred": 0.8576,
           "soh_true": 0.8859,
           "temperature_c": 27.02,
           "resistance_ohm": 0.09839,
-          "soh_deviation": 0.0243
+          "soh_deviation": 0.0233
         },
         "Cell_3 (B0007)": {
-          "soh_pred": 0.8308,
+          "soh_pred": 0.8231,
           "soh_true": 0.8664,
           "temperature_c": 30.07,
           "resistance_ohm": 0.10487,
-          "soh_deviation": -0.0051
+          "soh_deviation": -0.0111
         },
         "Cell_4 (B0018)": {
-          "soh_pred": 0.7999,
+          "soh_pred": 0.7873,
           "soh_true": 0.8477,
           "temperature_c": 32.91,
           "resistance_ohm": 0.11135,
-          "soh_deviation": -0.036
+          "soh_deviation": -0.047
         }
       }
     },
     {
       "cycle": 10,
-      "pack_soh_mean": 0.8321,
-      "pack_imbalance_delta": 0.0888,
+      "pack_soh_mean": 0.8297,
+      "pack_imbalance_delta": 0.0979,
       "max_temp_c": 34.05,
       "cells": {
         "B0005": {
-          "soh_pred": 0.8,
+          "soh_pred": 0.8195,
           "soh_true": 0.8956,
           "temperature_c": 34.05,
           "resistance_ohm": 0.09462,
-          "soh_deviation": -0.0321
+          "soh_deviation": -0.0102
         },
         "Cell_1 (B0005)": {
-          "soh_pred": 0.885,
+          "soh_pred": 0.8785,
           "soh_true": 0.8962,
           "temperature_c": 23.45,
           "resistance_ohm": 0.093,
-          "soh_deviation": 0.053
+          "soh_deviation": 0.0488
         },
         "Cell_2 (B0006)": {
-          "soh_pred": 0.8543,
+          "soh_pred": 0.8495,
           "soh_true": 0.88,
           "temperature_c": 26.62,
           "resistance_ohm": 0.09965,
-          "soh_deviation": 0.0222
+          "soh_deviation": 0.0198
         },
         "Cell_3 (B0007)": {
-          "soh_pred": 0.8247,
+          "soh_pred": 0.8204,
           "soh_true": 0.8614,
           "temperature_c": 29.93,
           "resistance_ohm": 0.1063,
-          "soh_deviation": -0.0073
+          "soh_deviation": -0.0093
         },
         "Cell_4 (B0018)": {
-          "soh_pred": 0.7963,
+          "soh_pred": 0.7806,
           "soh_true": 0.8417,
           "temperature_c": 32.71,
           "resistance_ohm": 0.11295,
-          "soh_deviation": -0.0358
+          "soh_deviation": -0.0491
         }
       }
     },
     {
       "cycle": 11,
-      "pack_soh_mean": 0.8269,
-      "pack_imbalance_delta": 0.0922,
+      "pack_soh_mean": 0.8255,
+      "pack_imbalance_delta": 0.0964,
       "max_temp_c": 33.95,
       "cells": {
         "B0005": {
-          "soh_pred": 0.797,
+          "soh_pred": 0.8195,
           "soh_true": 0.8914,
           "temperature_c": 33.95,
           "resistance_ohm": 0.09565,
-          "soh_deviation": -0.0299
+          "soh_deviation": -0.006
         },
         "Cell_1 (B0005)": {
-          "soh_pred": 0.8777,
+          "soh_pred": 0.8722,
           "soh_true": 0.8918,
           "temperature_c": 23.98,
           "resistance_ohm": 0.0941,
-          "soh_deviation": 0.0508
+          "soh_deviation": 0.0467
         },
         "Cell_2 (B0006)": {
-          "soh_pred": 0.8541,
+          "soh_pred": 0.8474,
           "soh_true": 0.8756,
           "temperature_c": 27.31,
           "resistance_ohm": 0.10092,
-          "soh_deviation": 0.0272
+          "soh_deviation": 0.022
         },
         "Cell_3 (B0007)": {
-          "soh_pred": 0.8201,
+          "soh_pred": 0.8126,
           "soh_true": 0.857,
           "temperature_c": 30.07,
           "resistance_ohm": 0.10773,
-          "soh_deviation": -0.0068
+          "soh_deviation": -0.0129
         },
         "Cell_4 (B0018)": {
-          "soh_pred": 0.7855,
+          "soh_pred": 0.7758,
           "soh_true": 0.8354,
           "temperature_c": 33.66,
           "resistance_ohm": 0.11454,
-          "soh_deviation": -0.0414
+          "soh_deviation": -0.0497
         }
       }
     },
     {
       "cycle": 12,
-      "pack_soh_mean": 0.8236,
-      "pack_imbalance_delta": 0.0948,
+      "pack_soh_mean": 0.8166,
+      "pack_imbalance_delta": 0.1019,
       "max_temp_c": 34.21,
       "cells": {
         "B0005": {
-          "soh_pred": 0.798,
+          "soh_pred": 0.7939,
           "soh_true": 0.8882,
           "temperature_c": 34.21,
           "resistance_ohm": 0.09684,
-          "soh_deviation": -0.0256
+          "soh_deviation": -0.0226
         },
         "Cell_1 (B0005)": {
-          "soh_pred": 0.8781,
+          "soh_pred": 0.8734,
           "soh_true": 0.8873,
           "temperature_c": 23.79,
           "resistance_ohm": 0.0952,
-          "soh_deviation": 0.0546
+          "soh_deviation": 0.0568
         },
         "Cell_2 (B0006)": {
-          "soh_pred": 0.8466,
+          "soh_pred": 0.8415,
           "soh_true": 0.8715,
           "temperature_c": 26.75,
           "resistance_ohm": 0.10218,
-          "soh_deviation": 0.023
+          "soh_deviation": 0.0249
         },
         "Cell_3 (B0007)": {
-          "soh_pred": 0.8118,
+          "soh_pred": 0.8025,
           "soh_true": 0.8507,
           "temperature_c": 29.41,
           "resistance_ohm": 0.10916,
-          "soh_deviation": -0.0117
+          "soh_deviation": -0.014
         },
         "Cell_4 (B0018)": {
-          "soh_pred": 0.7834,
+          "soh_pred": 0.7715,
           "soh_true": 0.8291,
           "temperature_c": 33.4,
           "resistance_ohm": 0.11614,
-          "soh_deviation": -0.0402
+          "soh_deviation": -0.0451
         }
       }
     },
     {
       "cycle": 13,
-      "pack_soh_mean": 0.8195,
-      "pack_imbalance_delta": 0.0975,
+      "pack_soh_mean": 0.8105,
+      "pack_imbalance_delta": 0.1091,
       "max_temp_c": 33.98,
       "cells": {
         "B0005": {
-          "soh_pred": 0.7934,
+          "soh_pred": 0.7913,
           "soh_true": 0.8841,
           "temperature_c": 33.98,
           "resistance_ohm": 0.09775,
-          "soh_deviation": -0.0261
+          "soh_deviation": -0.0192
         },
         "Cell_1 (B0005)": {
-          "soh_pred": 0.8732,
+          "soh_pred": 0.8672,
           "soh_true": 0.8824,
           "temperature_c": 23.65,
           "resistance_ohm": 0.0963,
-          "soh_deviation": 0.0537
+          "soh_deviation": 0.0566
         },
         "Cell_2 (B0006)": {
-          "soh_pred": 0.8427,
+          "soh_pred": 0.8349,
           "soh_true": 0.8663,
           "temperature_c": 26.75,
           "resistance_ohm": 0.10345,
-          "soh_deviation": 0.0232
+          "soh_deviation": 0.0244
         },
         "Cell_3 (B0007)": {
-          "soh_pred": 0.8125,
+          "soh_pred": 0.8012,
           "soh_true": 0.8455,
           "temperature_c": 30.13,
           "resistance_ohm": 0.11059,
-          "soh_deviation": -0.007
+          "soh_deviation": -0.0093
         },
         "Cell_4 (B0018)": {
-          "soh_pred": 0.7757,
+          "soh_pred": 0.7581,
           "soh_true": 0.8237,
           "temperature_c": 33.06,
           "resistance_ohm": 0.11773,
-          "soh_deviation": -0.0438
+          "soh_deviation": -0.0524
         }
       }
     },
     {
       "cycle": 14,
-      "pack_soh_mean": 0.8127,
-      "pack_imbalance_delta": 0.0979,
+      "pack_soh_mean": 0.809,
+      "pack_imbalance_delta": 0.104,
       "max_temp_c": 34.28,
       "cells": {
         "B0005": {
-          "soh_pred": 0.7922,
+          "soh_pred": 0.7969,
           "soh_true": 0.879,
           "temperature_c": 34.28,
           "resistance_ohm": 0.09881,
-          "soh_deviation": -0.0205
+          "soh_deviation": -0.0121
         },
         "Cell_1 (B0005)": {
-          "soh_pred": 0.8632,
+          "soh_pred": 0.8626,
           "soh_true": 0.8773,
           "temperature_c": 23.3,
           "resistance_ohm": 0.0974,
-          "soh_deviation": 0.0505
+          "soh_deviation": 0.0537
         },
         "Cell_2 (B0006)": {
-          "soh_pred": 0.838,
+          "soh_pred": 0.8309,
           "soh_true": 0.8615,
           "temperature_c": 27.3,
           "resistance_ohm": 0.10471,
-          "soh_deviation": 0.0254
+          "soh_deviation": 0.0219
         },
         "Cell_3 (B0007)": {
-          "soh_pred": 0.8045,
+          "soh_pred": 0.7957,
           "soh_true": 0.8393,
           "temperature_c": 29.82,
           "resistance_ohm": 0.11202,
-          "soh_deviation": -0.0081
+          "soh_deviation": -0.0132
         },
         "Cell_4 (B0018)": {
-          "soh_pred": 0.7654,
+          "soh_pred": 0.7586,
           "soh_true": 0.818,
           "temperature_c": 32.41,
           "resistance_ohm": 0.11933,
-          "soh_deviation": -0.0473
+          "soh_deviation": -0.0503
         }
       }
     },
     {
       "cycle": 15,
-      "pack_soh_mean": 0.8136,
-      "pack_imbalance_delta": 0.097,
+      "pack_soh_mean": 0.809,
+      "pack_imbalance_delta": 0.1111,
       "max_temp_c": 34.04,
       "cells": {
         "B0005": {
-          "soh_pred": 0.7892,
+          "soh_pred": 0.7943,
           "soh_true": 0.8808,
           "temperature_c": 34.04,
           "resistance_ohm": 0.09994,
-          "soh_deviation": -0.0244
+          "soh_deviation": -0.0147
         },
         "Cell_1 (B0005)": {
-          "soh_pred": 0.8643,
+          "soh_pred": 0.8677,
           "soh_true": 0.8788,
           "temperature_c": 24.19,
           "resistance_ohm": 0.0985,
-          "soh_deviation": 0.0507
+          "soh_deviation": 0.0586
         },
         "Cell_2 (B0006)": {
-          "soh_pred": 0.8436,
+          "soh_pred": 0.8325,
           "soh_true": 0.8624,
           "temperature_c": 27.11,
           "resistance_ohm": 0.10598,
-          "soh_deviation": 0.03
+          "soh_deviation": 0.0234
         },
         "Cell_3 (B0007)": {
-          "soh_pred": 0.8037,
+          "soh_pred": 0.7942,
           "soh_true": 0.8402,
           "temperature_c": 29.21,
           "resistance_ohm": 0.11345,
-          "soh_deviation": -0.0099
+          "soh_deviation": -0.0149
         },
         "Cell_4 (B0018)": {
-          "soh_pred": 0.7673,
+          "soh_pred": 0.7566,
           "soh_true": 0.8182,
           "temperature_c": 33.48,
           "resistance_ohm": 0.12092,
-          "soh_deviation": -0.0463
+          "soh_deviation": -0.0525
         }
       }
     },
     {
       "cycle": 16,
-      "pack_soh_mean": 0.8095,
-      "pack_imbalance_delta": 0.0962,
+      "pack_soh_mean": 0.8057,
+      "pack_imbalance_delta": 0.1109,
       "max_temp_c": 33.9,
       "cells": {
         "B0005": {
-          "soh_pred": 0.7872,
+          "soh_pred": 0.7949,
           "soh_true": 0.8763,
           "temperature_c": 33.9,
           "resistance_ohm": 0.10138,
-          "soh_deviation": -0.0223
+          "soh_deviation": -0.0107
         },
         "Cell_1 (B0005)": {
-          "soh_pred": 0.8617,
+          "soh_pred": 0.8621,
           "soh_true": 0.875,
           "temperature_c": 24.17,
           "resistance_ohm": 0.0996,
-          "soh_deviation": 0.0523
+          "soh_deviation": 0.0565
         },
         "Cell_2 (B0006)": {
-          "soh_pred": 0.8328,
+          "soh_pred": 0.8277,
           "soh_true": 0.8577,
           "temperature_c": 27.15,
           "resistance_ohm": 0.10724,
-          "soh_deviation": 0.0234
+          "soh_deviation": 0.0221
         },
         "Cell_3 (B0007)": {
-          "soh_pred": 0.8001,
+          "soh_pred": 0.7923,
           "soh_true": 0.8346,
           "temperature_c": 30.82,
           "resistance_ohm": 0.11488,
-          "soh_deviation": -0.0094
+          "soh_deviation": -0.0134
         },
         "Cell_4 (B0018)": {
-          "soh_pred": 0.7655,
+          "soh_pred": 0.7512,
           "soh_true": 0.8116,
           "temperature_c": 33.1,
           "resistance_ohm": 0.12252,
-          "soh_deviation": -0.044
+          "soh_deviation": -0.0545
         }
       }
     },
     {
       "cycle": 17,
-      "pack_soh_mean": 0.8032,
-      "pack_imbalance_delta": 0.1026,
+      "pack_soh_mean": 0.7999,
+      "pack_imbalance_delta": 0.1115,
       "max_temp_c": 33.86,
       "cells": {
         "B0005": {
-          "soh_pred": 0.7857,
+          "soh_pred": 0.7932,
           "soh_true": 0.8724,
           "temperature_c": 33.86,
           "resistance_ohm": 0.10272,
-          "soh_deviation": -0.0175
+          "soh_deviation": -0.0067
         },
         "Cell_1 (B0005)": {
-          "soh_pred": 0.8585,
+          "soh_pred": 0.8547,
           "soh_true": 0.8701,
           "temperature_c": 23.11,
           "resistance_ohm": 0.1007,
-          "soh_deviation": 0.0553
+          "soh_deviation": 0.0548
         },
         "Cell_2 (B0006)": {
-          "soh_pred": 0.8236,
+          "soh_pred": 0.8229,
           "soh_true": 0.8529,
           "temperature_c": 27.18,
           "resistance_ohm": 0.10851,
-          "soh_deviation": 0.0204
+          "soh_deviation": 0.023
         },
         "Cell_3 (B0007)": {
-          "soh_pred": 0.7922,
+          "soh_pred": 0.7854,
           "soh_true": 0.8289,
           "temperature_c": 29.99,
           "resistance_ohm": 0.11631,
-          "soh_deviation": -0.011
+          "soh_deviation": -0.0145
         },
         "Cell_4 (B0018)": {
-          "soh_pred": 0.756,
+          "soh_pred": 0.7432,
           "soh_true": 0.8062,
           "temperature_c": 32.92,
           "resistance_ohm": 0.12411,
-          "soh_deviation": -0.0472
+          "soh_deviation": -0.0566
         }
       }
     },
     {
       "cycle": 18,
-      "pack_soh_mean": 0.8005,
-      "pack_imbalance_delta": 0.1037,
+      "pack_soh_mean": 0.7967,
+      "pack_imbalance_delta": 0.1106,
       "max_temp_c": 34.28,
       "cells": {
         "B0005": {
-          "soh_pred": 0.7897,
+          "soh_pred": 0.7892,
           "soh_true": 0.8684,
           "temperature_c": 34.28,
           "resistance_ohm": 0.10386,
-          "soh_deviation": -0.0108
+          "soh_deviation": -0.0075
         },
         "Cell_1 (B0005)": {
-          "soh_pred": 0.8532,
+          "soh_pred": 0.853,
           "soh_true": 0.8656,
           "temperature_c": 23.0,
           "resistance_ohm": 0.1018,
-          "soh_deviation": 0.0527
+          "soh_deviation": 0.0563
         },
         "Cell_2 (B0006)": {
-          "soh_pred": 0.8246,
+          "soh_pred": 0.8196,
           "soh_true": 0.8482,
           "temperature_c": 26.93,
           "resistance_ohm": 0.10977,
-          "soh_deviation": 0.0241
+          "soh_deviation": 0.0229
         },
         "Cell_3 (B0007)": {
-          "soh_pred": 0.7855,
+          "soh_pred": 0.7793,
           "soh_true": 0.8232,
           "temperature_c": 30.0,
           "resistance_ohm": 0.11774,
-          "soh_deviation": -0.015
+          "soh_deviation": -0.0174
         },
         "Cell_4 (B0018)": {
-          "soh_pred": 0.7495,
+          "soh_pred": 0.7424,
           "soh_true": 0.7999,
           "temperature_c": 33.07,
           "resistance_ohm": 0.12571,
-          "soh_deviation": -0.051
+          "soh_deviation": -0.0543
         }
       }
     },
     {
       "cycle": 19,
-      "pack_soh_mean": 0.797,
-      "pack_imbalance_delta": 0.1034,
+      "pack_soh_mean": 0.7898,
+      "pack_imbalance_delta": 0.1132,
       "max_temp_c": 33.79,
       "cells": {
         "B0005": {
-          "soh_pred": 0.7856,
+          "soh_pred": 0.7786,
           "soh_true": 0.8642,
           "temperature_c": 33.79,
           "resistance_ohm": 0.10514,
-          "soh_deviation": -0.0114
+          "soh_deviation": -0.0112
         },
         "Cell_1 (B0005)": {
-          "soh_pred": 0.8507,
+          "soh_pred": 0.848,
           "soh_true": 0.8618,
           "temperature_c": 24.65,
           "resistance_ohm": 0.1029,
-          "soh_deviation": 0.0537
+          "soh_deviation": 0.0582
         },
         "Cell_2 (B0006)": {
-          "soh_pred": 0.8205,
+          "soh_pred": 0.8132,
           "soh_true": 0.8438,
           "temperature_c": 26.99,
           "resistance_ohm": 0.11104,
-          "soh_deviation": 0.0235
+          "soh_deviation": 0.0234
         },
         "Cell_3 (B0007)": {
-          "soh_pred": 0.7809,
+          "soh_pred": 0.7745,
           "soh_true": 0.8181,
           "temperature_c": 30.33,
           "resistance_ohm": 0.11917,
-          "soh_deviation": -0.016
+          "soh_deviation": -0.0153
         },
         "Cell_4 (B0018)": {
-          "soh_pred": 0.7472,
+          "soh_pred": 0.7348,
           "soh_true": 0.7947,
           "temperature_c": 32.64,
           "resistance_ohm": 0.12731,
-          "soh_deviation": -0.0498
+          "soh_deviation": -0.055
         }
       }
     },
     {
       "cycle": 20,
-      "pack_soh_mean": 0.7928,
-      "pack_imbalance_delta": 0.103,
+      "pack_soh_mean": 0.783,
+      "pack_imbalance_delta": 0.1113,
       "max_temp_c": 34.11,
       "cells": {
         "B0005": {
-          "soh_pred": 0.7848,
+          "soh_pred": 0.7705,
           "soh_true": 0.86,
           "temperature_c": 34.11,
           "resistance_ohm": 0.10673,
-          "soh_deviation": -0.0081
+          "soh_deviation": -0.0126
         },
         "Cell_1 (B0005)": {
-          "soh_pred": 0.8443,
+          "soh_pred": 0.8412,
           "soh_true": 0.8579,
           "temperature_c": 23.53,
           "resistance_ohm": 0.104,
-          "soh_deviation": 0.0515
+          "soh_deviation": 0.0581
         },
         "Cell_2 (B0006)": {
-          "soh_pred": 0.8185,
+          "soh_pred": 0.8069,
           "soh_true": 0.8393,
           "temperature_c": 26.55,
           "resistance_ohm": 0.1123,
-          "soh_deviation": 0.0257
+          "soh_deviation": 0.0239
         },
         "Cell_3 (B0007)": {
-          "soh_pred": 0.7753,
+          "soh_pred": 0.7668,
           "soh_true": 0.8125,
           "temperature_c": 30.01,
           "resistance_ohm": 0.1206,
-          "soh_deviation": -0.0175
+          "soh_deviation": -0.0162
         },
         "Cell_4 (B0018)": {
-          "soh_pred": 0.7413,
+          "soh_pred": 0.7298,
           "soh_true": 0.7885,
           "temperature_c": 33.21,
           "resistance_ohm": 0.1289,
-          "soh_deviation": -0.0516
+          "soh_deviation": -0.0532
         }
       }
     },
     {
       "cycle": 21,
-      "pack_soh_mean": 0.7873,
-      "pack_imbalance_delta": 0.1071,
+      "pack_soh_mean": 0.7763,
+      "pack_imbalance_delta": 0.1189,
       "max_temp_c": 34.08,
       "cells": {
         "B0005": {
-          "soh_pred": 0.783,
+          "soh_pred": 0.7569,
           "soh_true": 0.8552,
           "temperature_c": 34.08,
           "resistance_ohm": 0.1081,
-          "soh_deviation": -0.0042
+          "soh_deviation": -0.0194
         },
         "Cell_1 (B0005)": {
-          "soh_pred": 0.841,
+          "soh_pred": 0.8381,
           "soh_true": 0.8537,
           "temperature_c": 24.83,
           "resistance_ohm": 0.1051,
-          "soh_deviation": 0.0537
+          "soh_deviation": 0.0617
         },
         "Cell_2 (B0006)": {
-          "soh_pred": 0.8048,
+          "soh_pred": 0.8041,
           "soh_true": 0.8343,
           "temperature_c": 27.09,
           "resistance_ohm": 0.11357,
-          "soh_deviation": 0.0175
+          "soh_deviation": 0.0278
         },
         "Cell_3 (B0007)": {
-          "soh_pred": 0.7737,
+          "soh_pred": 0.7633,
           "soh_true": 0.8074,
           "temperature_c": 30.52,
           "resistance_ohm": 0.12203,
-          "soh_deviation": -0.0135
+          "soh_deviation": -0.013
         },
         "Cell_4 (B0018)": {
-          "soh_pred": 0.7339,
+          "soh_pred": 0.7192,
           "soh_true": 0.7835,
           "temperature_c": 32.94,
           "resistance_ohm": 0.1305,
-          "soh_deviation": -0.0534
+          "soh_deviation": -0.0572
         }
       }
     },
     {
       "cycle": 22,
-      "pack_soh_mean": 0.7864,
-      "pack_imbalance_delta": 0.1065,
+      "pack_soh_mean": 0.7703,
+      "pack_imbalance_delta": 0.1166,
       "max_temp_c": 33.94,
       "cells": {
         "B0005": {
-          "soh_pred": 0.7816,
+          "soh_pred": 0.7404,
           "soh_true": 0.8508,
           "temperature_c": 33.94,
           "resistance_ohm": 0.10927,
-          "soh_deviation": -0.0048
+          "soh_deviation": -0.0299
         },
         "Cell_1 (B0005)": {
-          "soh_pred": 0.8409,
+          "soh_pred": 0.8338,
           "soh_true": 0.8504,
           "temperature_c": 23.58,
           "resistance_ohm": 0.1062,
-          "soh_deviation": 0.0545
+          "soh_deviation": 0.0635
         },
         "Cell_2 (B0006)": {
-          "soh_pred": 0.8077,
+          "soh_pred": 0.8003,
           "soh_true": 0.829,
           "temperature_c": 26.83,
           "resistance_ohm": 0.11483,
-          "soh_deviation": 0.0213
+          "soh_deviation": 0.03
         },
         "Cell_3 (B0007)": {
-          "soh_pred": 0.7675,
+          "soh_pred": 0.7597,
           "soh_true": 0.8016,
           "temperature_c": 29.78,
           "resistance_ohm": 0.12346,
-          "soh_deviation": -0.0189
+          "soh_deviation": -0.0106
         },
         "Cell_4 (B0018)": {
-          "soh_pred": 0.7344,
+          "soh_pred": 0.7173,
           "soh_true": 0.7772,
           "temperature_c": 33.34,
           "resistance_ohm": 0.13209,
-          "soh_deviation": -0.052
+          "soh_deviation": -0.053
         }
       }
     },
     {
       "cycle": 23,
-      "pack_soh_mean": 0.7798,
-      "pack_imbalance_delta": 0.1049,
+      "pack_soh_mean": 0.7678,
+      "pack_imbalance_delta": 0.1185,
       "max_temp_c": 34.3,
       "cells": {
         "B0005": {
-          "soh_pred": 0.7818,
+          "soh_pred": 0.7551,
           "soh_true": 0.8462,
           "temperature_c": 34.3,
           "resistance_ohm": 0.11044,
-          "soh_deviation": 0.002
+          "soh_deviation": -0.0126
         },
         "Cell_1 (B0005)": {
-          "soh_pred": 0.8312,
+          "soh_pred": 0.8283,
           "soh_true": 0.8454,
           "temperature_c": 24.74,
           "resistance_ohm": 0.1073,
-          "soh_deviation": 0.0514
+          "soh_deviation": 0.0606
         },
         "Cell_2 (B0006)": {
-          "soh_pred": 0.8011,
+          "soh_pred": 0.7935,
           "soh_true": 0.824,
           "temperature_c": 27.22,
           "resistance_ohm": 0.1161,
-          "soh_deviation": 0.0213
+          "soh_deviation": 0.0258
         },
         "Cell_3 (B0007)": {
-          "soh_pred": 0.7585,
+          "soh_pred": 0.752,
           "soh_true": 0.7956,
           "temperature_c": 29.8,
           "resistance_ohm": 0.12489,
-          "soh_deviation": -0.0213
+          "soh_deviation": -0.0157
         },
         "Cell_4 (B0018)": {
-          "soh_pred": 0.7263,
+          "soh_pred": 0.7098,
           "soh_true": 0.7707,
           "temperature_c": 33.23,
           "resistance_ohm": 0.13369,
-          "soh_deviation": -0.0534
+          "soh_deviation": -0.058
         }
       }
     },
     {
       "cycle": 24,
-      "pack_soh_mean": 0.7769,
-      "pack_imbalance_delta": 0.112,
+      "pack_soh_mean": 0.7557,
+      "pack_imbalance_delta": 0.1156,
       "max_temp_c": 33.85,
       "cells": {
         "B0005": {
-          "soh_pred": 0.7787,
+          "soh_pred": 0.7205,
           "soh_true": 0.8416,
           "temperature_c": 33.85,
           "resistance_ohm": 0.11157,
-          "soh_deviation": 0.0018
+          "soh_deviation": -0.0351
         },
         "Cell_1 (B0005)": {
-          "soh_pred": 0.8306,
+          "soh_pred": 0.8198,
           "soh_true": 0.8412,
           "temperature_c": 23.5,
           "resistance_ohm": 0.1084,
-          "soh_deviation": 0.0537
+          "soh_deviation": 0.0641
         },
         "Cell_2 (B0006)": {
-          "soh_pred": 0.8004,
+          "soh_pred": 0.7878,
           "soh_true": 0.8188,
           "temperature_c": 26.67,
           "resistance_ohm": 0.11736,
-          "soh_deviation": 0.0235
+          "soh_deviation": 0.0321
         },
         "Cell_3 (B0007)": {
-          "soh_pred": 0.7563,
+          "soh_pred": 0.746,
           "soh_true": 0.7904,
           "temperature_c": 29.7,
           "resistance_ohm": 0.12632,
-          "soh_deviation": -0.0206
+          "soh_deviation": -0.0096
         },
         "Cell_4 (B0018)": {
-          "soh_pred": 0.7186,
+          "soh_pred": 0.7042,
           "soh_true": 0.765,
           "temperature_c": 32.24,
           "resistance_ohm": 0.13528,
-          "soh_deviation": -0.0583
+          "soh_deviation": -0.0515
         }
       }
     },
     {
       "cycle": 25,
-      "pack_soh_mean": 0.7706,
-      "pack_imbalance_delta": 0.113,
+      "pack_soh_mean": 0.7606,
+      "pack_imbalance_delta": 0.1208,
       "max_temp_c": 33.74,
       "cells": {
         "B0005": {
-          "soh_pred": 0.7755,
+          "soh_pred": 0.7579,
           "soh_true": 0.8369,
           "temperature_c": 33.74,
           "resistance_ohm": 0.11264,
-          "soh_deviation": 0.0048
+          "soh_deviation": -0.0027
         },
         "Cell_1 (B0005)": {
-          "soh_pred": 0.8232,
+          "soh_pred": 0.8214,
           "soh_true": 0.8359,
           "temperature_c": 24.64,
           "resistance_ohm": 0.1095,
-          "soh_deviation": 0.0525
+          "soh_deviation": 0.0609
         },
         "Cell_2 (B0006)": {
-          "soh_pred": 0.7923,
+          "soh_pred": 0.78,
           "soh_true": 0.8139,
           "temperature_c": 27.15,
           "resistance_ohm": 0.11863,
-          "soh_deviation": 0.0217
+          "soh_deviation": 0.0194
         },
         "Cell_3 (B0007)": {
-          "soh_pred": 0.7521,
+          "soh_pred": 0.743,
           "soh_true": 0.7858,
           "temperature_c": 30.19,
           "resistance_ohm": 0.12775,
-          "soh_deviation": -0.0186
+          "soh_deviation": -0.0176
         },
         "Cell_4 (B0018)": {
-          "soh_pred": 0.7102,
+          "soh_pred": 0.7006,
           "soh_true": 0.759,
           "temperature_c": 33.4,
           "resistance_ohm": 0.13688,
-          "soh_deviation": -0.0605
+          "soh_deviation": -0.06
         }
       }
     },
     {
       "cycle": 26,
-      "pack_soh_mean": 0.7657,
-      "pack_imbalance_delta": 0.1149,
+      "pack_soh_mean": 0.7508,
+      "pack_imbalance_delta": 0.1274,
       "max_temp_c": 33.89,
       "cells": {
         "B0005": {
-          "soh_pred": 0.7744,
+          "soh_pred": 0.7302,
           "soh_true": 0.8322,
           "temperature_c": 33.89,
           "resistance_ohm": 0.11371,
-          "soh_deviation": 0.0087
+          "soh_deviation": -0.0205
         },
         "Cell_1 (B0005)": {
-          "soh_pred": 0.8188,
+          "soh_pred": 0.8179,
           "soh_true": 0.8313,
           "temperature_c": 23.68,
           "resistance_ohm": 0.1106,
-          "soh_deviation": 0.0531
+          "soh_deviation": 0.0671
         },
         "Cell_2 (B0006)": {
-          "soh_pred": 0.786,
+          "soh_pred": 0.7783,
           "soh_true": 0.809,
           "temperature_c": 26.17,
           "resistance_ohm": 0.11989,
-          "soh_deviation": 0.0203
+          "soh_deviation": 0.0276
         },
         "Cell_3 (B0007)": {
-          "soh_pred": 0.7454,
+          "soh_pred": 0.737,
           "soh_true": 0.7812,
           "temperature_c": 29.51,
           "resistance_ohm": 0.12918,
-          "soh_deviation": -0.0203
+          "soh_deviation": -0.0138
         },
         "Cell_4 (B0018)": {
-          "soh_pred": 0.7039,
+          "soh_pred": 0.6905,
           "soh_true": 0.7521,
           "temperature_c": 33.28,
           "resistance_ohm": 0.13847,
-          "soh_deviation": -0.0618
+          "soh_deviation": -0.0603
         }
       }
     },
     {
       "cycle": 27,
-      "pack_soh_mean": 0.7604,
-      "pack_imbalance_delta": 0.121,
+      "pack_soh_mean": 0.7443,
+      "pack_imbalance_delta": 0.1275,
       "max_temp_c": 33.85,
       "cells": {
         "B0005": {
-          "soh_pred": 0.7723,
+          "soh_pred": 0.7176,
           "soh_true": 0.8281,
           "temperature_c": 33.85,
           "resistance_ohm": 0.11491,
-          "soh_deviation": 0.0119
+          "soh_deviation": -0.0267
         },
         "Cell_1 (B0005)": {
-          "soh_pred": 0.8176,
+          "soh_pred": 0.812,
           "soh_true": 0.8271,
           "temperature_c": 23.94,
           "resistance_ohm": 0.1117,
-          "soh_deviation": 0.0572
+          "soh_deviation": 0.0677
         },
         "Cell_2 (B0006)": {
-          "soh_pred": 0.7799,
+          "soh_pred": 0.7737,
           "soh_true": 0.804,
           "temperature_c": 27.89,
           "resistance_ohm": 0.12116,
-          "soh_deviation": 0.0195
+          "soh_deviation": 0.0294
         },
         "Cell_3 (B0007)": {
-          "soh_pred": 0.7356,
+          "soh_pred": 0.7336,
           "soh_true": 0.7767,
           "temperature_c": 29.97,
           "resistance_ohm": 0.13061,
-          "soh_deviation": -0.0248
+          "soh_deviation": -0.0107
         },
         "Cell_4 (B0018)": {
-          "soh_pred": 0.6966,
+          "soh_pred": 0.6845,
           "soh_true": 0.7458,
           "temperature_c": 33.15,
           "resistance_ohm": 0.14007,
-          "soh_deviation": -0.0638
+          "soh_deviation": -0.0597
         }
       }
     },
     {
       "cycle": 28,
-      "pack_soh_mean": 0.7562,
-      "pack_imbalance_delta": 0.1146,
+      "pack_soh_mean": 0.7387,
+      "pack_imbalance_delta": 0.1272,
       "max_temp_c": 33.85,
       "cells": {
         "B0005": {
-          "soh_pred": 0.7708,
+          "soh_pred": 0.7105,
           "soh_true": 0.8248,
           "temperature_c": 33.85,
           "resistance_ohm": 0.11628,
-          "soh_deviation": 0.0146
+          "soh_deviation": -0.0283
         },
         "Cell_1 (B0005)": {
-          "soh_pred": 0.808,
+          "soh_pred": 0.8072,
           "soh_true": 0.8227,
           "temperature_c": 24.58,
           "resistance_ohm": 0.1128,
-          "soh_deviation": 0.0518
+          "soh_deviation": 0.0685
         },
         "Cell_2 (B0006)": {
-          "soh_pred": 0.7764,
+          "soh_pred": 0.771,
           "soh_true": 0.7993,
           "temperature_c": 26.71,
           "resistance_ohm": 0.12242,
-          "soh_deviation": 0.0202
+          "soh_deviation": 0.0322
         },
         "Cell_3 (B0007)": {
-          "soh_pred": 0.7324,
+          "soh_pred": 0.7249,
           "soh_true": 0.7712,
           "temperature_c": 29.87,
           "resistance_ohm": 0.13204,
-          "soh_deviation": -0.0239
+          "soh_deviation": -0.0138
         },
         "Cell_4 (B0018)": {
-          "soh_pred": 0.6935,
+          "soh_pred": 0.68,
           "soh_true": 0.7399,
           "temperature_c": 32.95,
           "resistance_ohm": 0.14166,
-          "soh_deviation": -0.0627
+          "soh_deviation": -0.0587
         }
       }
     },
     {
       "cycle": 29,
-      "pack_soh_mean": 0.7527,
-      "pack_imbalance_delta": 0.1181,
+      "pack_soh_mean": 0.7388,
+      "pack_imbalance_delta": 0.1327,
       "max_temp_c": 33.82,
       "cells": {
         "B0005": {
-          "soh_pred": 0.7682,
+          "soh_pred": 0.7362,
           "soh_true": 0.8205,
           "temperature_c": 33.82,
           "resistance_ohm": 0.11771,
-          "soh_deviation": 0.0155
+          "soh_deviation": -0.0026
         },
         "Cell_1 (B0005)": {
-          "soh_pred": 0.8047,
+          "soh_pred": 0.8035,
           "soh_true": 0.818,
           "temperature_c": 23.57,
           "resistance_ohm": 0.1139,
-          "soh_deviation": 0.052
+          "soh_deviation": 0.0647
         },
         "Cell_2 (B0006)": {
-          "soh_pred": 0.7739,
+          "soh_pred": 0.7653,
           "soh_true": 0.7942,
           "temperature_c": 27.12,
           "resistance_ohm": 0.12369,
-          "soh_deviation": 0.0212
+          "soh_deviation": 0.0265
         },
         "Cell_3 (B0007)": {
-          "soh_pred": 0.7302,
+          "soh_pred": 0.7182,
           "soh_true": 0.7662,
           "temperature_c": 29.53,
           "resistance_ohm": 0.13347,
-          "soh_deviation": -0.0225
+          "soh_deviation": -0.0206
         },
         "Cell_4 (B0018)": {
-          "soh_pred": 0.6866,
+          "soh_pred": 0.6708,
           "soh_true": 0.7329,
           "temperature_c": 32.62,
           "resistance_ohm": 0.14326,
-          "soh_deviation": -0.0661
+          "soh_deviation": -0.068
         }
       }
     },
     {
       "cycle": 30,
-      "pack_soh_mean": 0.7483,
-      "pack_imbalance_delta": 0.1295,
+      "pack_soh_mean": 0.7323,
+      "pack_imbalance_delta": 0.1305,
       "max_temp_c": 33.68,
       "cells": {
         "B0005": {
-          "soh_pred": 0.7656,
+          "soh_pred": 0.7232,
           "soh_true": 0.8152,
           "temperature_c": 33.68,
           "resistance_ohm": 0.11885,
-          "soh_deviation": 0.0173
+          "soh_deviation": -0.009
         },
         "Cell_1 (B0005)": {
-          "soh_pred": 0.8062,
+          "soh_pred": 0.7983,
           "soh_true": 0.813,
           "temperature_c": 24.13,
           "resistance_ohm": 0.115,
-          "soh_deviation": 0.0578
+          "soh_deviation": 0.066
         },
         "Cell_2 (B0006)": {
-          "soh_pred": 0.7663,
+          "soh_pred": 0.7595,
           "soh_true": 0.7888,
           "temperature_c": 26.5,
           "resistance_ohm": 0.12495,
-          "soh_deviation": 0.018
+          "soh_deviation": 0.0272
         },
         "Cell_3 (B0007)": {
-          "soh_pred": 0.7269,
+          "soh_pred": 0.7125,
           "soh_true": 0.7605,
           "temperature_c": 29.78,
           "resistance_ohm": 0.1349,
-          "soh_deviation": -0.0214
+          "soh_deviation": -0.0197
         },
         "Cell_4 (B0018)": {
-          "soh_pred": 0.6767,
+          "soh_pred": 0.6678,
           "soh_true": 0.7259,
           "temperature_c": 32.87,
           "resistance_ohm": 0.14485,
-          "soh_deviation": -0.0716
+          "soh_deviation": -0.0645
         }
       }
     },
     {
       "cycle": 31,
-      "pack_soh_mean": 0.7397,
-      "pack_imbalance_delta": 0.1247,
+      "pack_soh_mean": 0.726,
+      "pack_imbalance_delta": 0.1316,
       "max_temp_c": 33.71,
       "cells": {
         "B0005": {
-          "soh_pred": 0.7648,
+          "soh_pred": 0.7216,
           "soh_true": 0.8113,
           "temperature_c": 33.71,
           "resistance_ohm": 0.11984,
-          "soh_deviation": 0.0251
+          "soh_deviation": -0.0044
         },
         "Cell_1 (B0005)": {
-          "soh_pred": 0.7929,
+          "soh_pred": 0.7907,
           "soh_true": 0.8084,
           "temperature_c": 24.59,
           "resistance_ohm": 0.1161,
-          "soh_deviation": 0.0533
+          "soh_deviation": 0.0648
         },
         "Cell_2 (B0006)": {
-          "soh_pred": 0.7572,
+          "soh_pred": 0.7515,
           "soh_true": 0.7835,
           "temperature_c": 27.24,
           "resistance_ohm": 0.12622,
-          "soh_deviation": 0.0176
+          "soh_deviation": 0.0255
         },
         "Cell_3 (B0007)": {
-          "soh_pred": 0.7152,
+          "soh_pred": 0.7069,
           "soh_true": 0.7548,
           "temperature_c": 29.65,
           "resistance_ohm": 0.13633,
-          "soh_deviation": -0.0245
+          "soh_deviation": -0.0191
         },
         "Cell_4 (B0018)": {
-          "soh_pred": 0.6682,
+          "soh_pred": 0.6591,
           "soh_true": 0.7191,
           "temperature_c": 32.44,
           "resistance_ohm": 0.14645,
-          "soh_deviation": -0.0715
+          "soh_deviation": -0.0668
         }
       }
     },
     {
       "cycle": 32,
-      "pack_soh_mean": 0.7443,
-      "pack_imbalance_delta": 0.125,
+      "pack_soh_mean": 0.7245,
+      "pack_imbalance_delta": 0.1388,
       "max_temp_c": 33.79,
       "cells": {
         "B0005": {
-          "soh_pred": 0.7616,
+          "soh_pred": 0.7017,
           "soh_true": 0.8144,
           "temperature_c": 33.79,
           "resistance_ohm": 0.12088,
-          "soh_deviation": 0.0173
+          "soh_deviation": -0.0228
         },
         "Cell_1 (B0005)": {
-          "soh_pred": 0.7993,
+          "soh_pred": 0.7975,
           "soh_true": 0.8107,
           "temperature_c": 23.99,
           "resistance_ohm": 0.1172,
-          "soh_deviation": 0.055
+          "soh_deviation": 0.073
         },
         "Cell_2 (B0006)": {
-          "soh_pred": 0.7635,
+          "soh_pred": 0.7552,
           "soh_true": 0.7847,
           "temperature_c": 27.14,
           "resistance_ohm": 0.12748,
-          "soh_deviation": 0.0193
+          "soh_deviation": 0.0307
         },
         "Cell_3 (B0007)": {
-          "soh_pred": 0.7226,
+          "soh_pred": 0.7094,
           "soh_true": 0.7552,
           "temperature_c": 30.52,
           "resistance_ohm": 0.13776,
-          "soh_deviation": -0.0216
+          "soh_deviation": -0.0151
         },
         "Cell_4 (B0018)": {
-          "soh_pred": 0.6743,
+          "soh_pred": 0.6587,
           "soh_true": 0.7186,
           "temperature_c": 32.71,
           "resistance_ohm": 0.14804,
-          "soh_deviation": -0.07
+          "soh_deviation": -0.0658
         }
       }
     },
     {
       "cycle": 33,
-      "pack_soh_mean": 0.7358,
-      "pack_imbalance_delta": 0.137,
+      "pack_soh_mean": 0.7201,
+      "pack_imbalance_delta": 0.1393,
       "max_temp_c": 33.77,
       "cells": {
         "B0005": {
-          "soh_pred": 0.7601,
+          "soh_pred": 0.7015,
           "soh_true": 0.8093,
           "temperature_c": 33.77,
           "resistance_ohm": 0.12191,
-          "soh_deviation": 0.0243
+          "soh_deviation": -0.0187
         },
         "Cell_1 (B0005)": {
-          "soh_pred": 0.7958,
+          "soh_pred": 0.7905,
           "soh_true": 0.8068,
           "temperature_c": 23.37,
           "resistance_ohm": 0.1183,
-          "soh_deviation": 0.0601
+          "soh_deviation": 0.0704
         },
         "Cell_2 (B0006)": {
-          "soh_pred": 0.7561,
+          "soh_pred": 0.7521,
           "soh_true": 0.7793,
           "temperature_c": 27.35,
           "resistance_ohm": 0.12875,
-          "soh_deviation": 0.0203
+          "soh_deviation": 0.032
         },
         "Cell_3 (B0007)": {
-          "soh_pred": 0.708,
+          "soh_pred": 0.7054,
           "soh_true": 0.7494,
           "temperature_c": 29.84,
           "resistance_ohm": 0.13919,
-          "soh_deviation": -0.0278
+          "soh_deviation": -0.0148
         },
         "Cell_4 (B0018)": {
-          "soh_pred": 0.6588,
+          "soh_pred": 0.6512,
           "soh_true": 0.7132,
           "temperature_c": 33.09,
           "resistance_ohm": 0.14964,
-          "soh_deviation": -0.0769
+          "soh_deviation": -0.0689
         }
       }
     },
     {
       "cycle": 34,
-      "pack_soh_mean": 0.7352,
-      "pack_imbalance_delta": 0.134,
+      "pack_soh_mean": 0.7213,
+      "pack_imbalance_delta": 0.1383,
       "max_temp_c": 33.97,
       "cells": {
         "B0005": {
-          "soh_pred": 0.7595,
+          "soh_pred": 0.7239,
           "soh_true": 0.8054,
           "temperature_c": 33.97,
           "resistance_ohm": 0.12314,
-          "soh_deviation": 0.0243
+          "soh_deviation": 0.0025
         },
         "Cell_1 (B0005)": {
-          "soh_pred": 0.7931,
+          "soh_pred": 0.7865,
           "soh_true": 0.8023,
           "temperature_c": 25.0,
           "resistance_ohm": 0.1194,
-          "soh_deviation": 0.0579
+          "soh_deviation": 0.0651
         },
         "Cell_2 (B0006)": {
-          "soh_pred": 0.7541,
+          "soh_pred": 0.7467,
           "soh_true": 0.775,
           "temperature_c": 27.33,
           "resistance_ohm": 0.13001,
-          "soh_deviation": 0.0189
+          "soh_deviation": 0.0254
         },
         "Cell_3 (B0007)": {
-          "soh_pred": 0.7101,
+          "soh_pred": 0.7014,
           "soh_true": 0.7437,
           "temperature_c": 29.9,
           "resistance_ohm": 0.14062,
-          "soh_deviation": -0.0251
+          "soh_deviation": -0.0199
         },
         "Cell_4 (B0018)": {
-          "soh_pred": 0.6592,
+          "soh_pred": 0.6482,
           "soh_true": 0.7065,
           "temperature_c": 32.66,
           "resistance_ohm": 0.15123,
-          "soh_deviation": -0.076
+          "soh_deviation": -0.0731
         }
       }
     },
     {
       "cycle": 35,
-      "pack_soh_mean": 0.7306,
-      "pack_imbalance_delta": 0.1325,
+      "pack_soh_mean": 0.716,
+      "pack_imbalance_delta": 0.1423,
       "max_temp_c": 33.74,
       "cells": {
         "B0005": {
-          "soh_pred": 0.7569,
+          "soh_pred": 0.718,
           "soh_true": 0.801,
           "temperature_c": 33.74,
           "resistance_ohm": 0.12457,
-          "soh_deviation": 0.0262
+          "soh_deviation": 0.0021
         },
         "Cell_1 (B0005)": {
-          "soh_pred": 0.7874,
+          "soh_pred": 0.7832,
           "soh_true": 0.799,
           "temperature_c": 23.99,
           "resistance_ohm": 0.1205,
-          "soh_deviation": 0.0568
+          "soh_deviation": 0.0672
         },
         "Cell_2 (B0006)": {
-          "soh_pred": 0.7504,
+          "soh_pred": 0.7406,
           "soh_true": 0.7701,
           "temperature_c": 27.03,
           "resistance_ohm": 0.13128,
-          "soh_deviation": 0.0197
+          "soh_deviation": 0.0246
         },
         "Cell_3 (B0007)": {
-          "soh_pred": 0.7036,
+          "soh_pred": 0.6971,
           "soh_true": 0.7382,
           "temperature_c": 29.87,
           "resistance_ohm": 0.14205,
-          "soh_deviation": -0.027
+          "soh_deviation": -0.0189
         },
         "Cell_4 (B0018)": {
-          "soh_pred": 0.6549,
+          "soh_pred": 0.6409,
           "soh_true": 0.7011,
           "temperature_c": 32.96,
           "resistance_ohm": 0.15283,
-          "soh_deviation": -0.0757
+          "soh_deviation": -0.0751
         }
       }
     },
     {
       "cycle": 36,
-      "pack_soh_mean": 0.7247,
-      "pack_imbalance_delta": 0.1381,
+      "pack_soh_mean": 0.7078,
+      "pack_imbalance_delta": 0.1494,
       "max_temp_c": 33.76,
       "cells": {
         "B0005": {
-          "soh_pred": 0.757,
+          "soh_pred": 0.7014,
           "soh_true": 0.798,
           "temperature_c": 33.76,
           "resistance_ohm": 0.1258,
-          "soh_deviation": 0.0323
+          "soh_deviation": -0.0064
         },
         "Cell_1 (B0005)": {
-          "soh_pred": 0.7851,
+          "soh_pred": 0.7811,
           "soh_true": 0.7944,
           "temperature_c": 24.05,
           "resistance_ohm": 0.1216,
-          "soh_deviation": 0.0604
+          "soh_deviation": 0.0733
         },
         "Cell_2 (B0006)": {
-          "soh_pred": 0.7382,
+          "soh_pred": 0.7365,
           "soh_true": 0.7652,
           "temperature_c": 26.94,
           "resistance_ohm": 0.13254,
-          "soh_deviation": 0.0135
+          "soh_deviation": 0.0286
         },
         "Cell_3 (B0007)": {
-          "soh_pred": 0.6963,
+          "soh_pred": 0.6885,
           "soh_true": 0.7327,
           "temperature_c": 30.08,
           "resistance_ohm": 0.14348,
-          "soh_deviation": -0.0285
+          "soh_deviation": -0.0193
         },
         "Cell_4 (B0018)": {
-          "soh_pred": 0.647,
+          "soh_pred": 0.6317,
           "soh_true": 0.695,
           "temperature_c": 33.22,
           "resistance_ohm": 0.15442,
-          "soh_deviation": -0.0777
+          "soh_deviation": -0.0762
         }
       }
     },
     {
       "cycle": 37,
-      "pack_soh_mean": 0.7203,
-      "pack_imbalance_delta": 0.148,
+      "pack_soh_mean": 0.7034,
+      "pack_imbalance_delta": 0.1494,
       "max_temp_c": 33.83,
       "cells": {
         "B0005": {
-          "soh_pred": 0.7551,
+          "soh_pred": 0.6998,
           "soh_true": 0.7937,
           "temperature_c": 33.83,
           "resistance_ohm": 0.12697,
-          "soh_deviation": 0.0348
+          "soh_deviation": -0.0036
         },
         "Cell_1 (B0005)": {
-          "soh_pred": 0.7833,
+          "soh_pred": 0.7781,
           "soh_true": 0.7902,
           "temperature_c": 23.48,
           "resistance_ohm": 0.1227,
-          "soh_deviation": 0.063
+          "soh_deviation": 0.0746
         },
         "Cell_2 (B0006)": {
-          "soh_pred": 0.7349,
+          "soh_pred": 0.7281,
           "soh_true": 0.7597,
           "temperature_c": 26.97,
           "resistance_ohm": 0.13381,
-          "soh_deviation": 0.0146
+          "soh_deviation": 0.0247
         },
         "Cell_3 (B0007)": {
-          "soh_pred": 0.6929,
+          "soh_pred": 0.6825,
           "soh_true": 0.7277,
           "temperature_c": 29.59,
           "resistance_ohm": 0.14491,
-          "soh_deviation": -0.0274
+          "soh_deviation": -0.0209
         },
         "Cell_4 (B0018)": {
-          "soh_pred": 0.6353,
+          "soh_pred": 0.6286,
           "soh_true": 0.6883,
           "temperature_c": 32.98,
           "resistance_ohm": 0.15602,
-          "soh_deviation": -0.085
+          "soh_deviation": -0.0748
         }
       }
     },
     {
       "cycle": 38,
-      "pack_soh_mean": 0.7171,
-      "pack_imbalance_delta": 0.1372,
+      "pack_soh_mean": 0.7013,
+      "pack_imbalance_delta": 0.1498,
       "max_temp_c": 33.74,
       "cells": {
         "B0005": {
-          "soh_pred": 0.7522,
+          "soh_pred": 0.7105,
           "soh_true": 0.7893,
           "temperature_c": 33.74,
           "resistance_ohm": 0.12785,
-          "soh_deviation": 0.0351
+          "soh_deviation": 0.0092
         },
         "Cell_1 (B0005)": {
-          "soh_pred": 0.7728,
+          "soh_pred": 0.7719,
           "soh_true": 0.7859,
           "temperature_c": 23.7,
           "resistance_ohm": 0.1238,
-          "soh_deviation": 0.0557
+          "soh_deviation": 0.0706
         },
         "Cell_2 (B0006)": {
-          "soh_pred": 0.7304,
+          "soh_pred": 0.7245,
           "soh_true": 0.7554,
           "temperature_c": 26.84,
           "resistance_ohm": 0.13507,
-          "soh_deviation": 0.0132
+          "soh_deviation": 0.0232
         },
         "Cell_3 (B0007)": {
-          "soh_pred": 0.6948,
+          "soh_pred": 0.6776,
           "soh_true": 0.7229,
           "temperature_c": 29.36,
           "resistance_ohm": 0.14634,
-          "soh_deviation": -0.0224
+          "soh_deviation": -0.0238
         },
         "Cell_4 (B0018)": {
-          "soh_pred": 0.6355,
+          "soh_pred": 0.6221,
           "soh_true": 0.6812,
           "temperature_c": 33.09,
           "resistance_ohm": 0.15761,
-          "soh_deviation": -0.0816
+          "soh_deviation": -0.0792
         }
       }
     },
     {
       "cycle": 39,
-      "pack_soh_mean": 0.7116,
-      "pack_imbalance_delta": 0.1394,
+      "pack_soh_mean": 0.6967,
+      "pack_imbalance_delta": 0.1502,
       "max_temp_c": 34.08,
       "cells": {
         "B0005": {
-          "soh_pred": 0.7527,
+          "soh_pred": 0.7033,
           "soh_true": 0.7853,
           "temperature_c": 34.08,
           "resistance_ohm": 0.12914,
-          "soh_deviation": 0.0411
+          "soh_deviation": 0.0066
         },
         "Cell_1 (B0005)": {
-          "soh_pred": 0.77,
+          "soh_pred": 0.7665,
           "soh_true": 0.7827,
           "temperature_c": 24.48,
           "resistance_ohm": 0.1249,
-          "soh_deviation": 0.0584
+          "soh_deviation": 0.0698
         },
         "Cell_2 (B0006)": {
-          "soh_pred": 0.7228,
+          "soh_pred": 0.7219,
           "soh_true": 0.7504,
           "temperature_c": 27.49,
           "resistance_ohm": 0.13633,
-          "soh_deviation": 0.0113
+          "soh_deviation": 0.0252
         },
         "Cell_3 (B0007)": {
-          "soh_pred": 0.6817,
+          "soh_pred": 0.6757,
           "soh_true": 0.718,
           "temperature_c": 30.06,
           "resistance_ohm": 0.14777,
-          "soh_deviation": -0.0299
+          "soh_deviation": -0.021
         },
         "Cell_4 (B0018)": {
-          "soh_pred": 0.6307,
+          "soh_pred": 0.6162,
           "soh_true": 0.6753,
           "temperature_c": 32.36,
           "resistance_ohm": 0.15921,
-          "soh_deviation": -0.0809
+          "soh_deviation": -0.0805
         }
       }
     },
     {
       "cycle": 40,
-      "pack_soh_mean": 0.7075,
-      "pack_imbalance_delta": 0.1417,
+      "pack_soh_mean": 0.6917,
+      "pack_imbalance_delta": 0.152,
       "max_temp_c": 34.08,
       "cells": {
         "B0005": {
-          "soh_pred": 0.7516,
+          "soh_pred": 0.7075,
           "soh_true": 0.7802,
           "temperature_c": 34.08,
           "resistance_ohm": 0.13013,
-          "soh_deviation": 0.044
+          "soh_deviation": 0.0158
         },
         "Cell_1 (B0005)": {
-          "soh_pred": 0.7661,
+          "soh_pred": 0.7624,
           "soh_true": 0.778,
           "temperature_c": 24.02,
           "resistance_ohm": 0.126,
-          "soh_deviation": 0.0586
+          "soh_deviation": 0.0707
         },
         "Cell_2 (B0006)": {
-          "soh_pred": 0.7185,
+          "soh_pred": 0.7134,
           "soh_true": 0.7452,
           "temperature_c": 26.66,
           "resistance_ohm": 0.1376,
-          "soh_deviation": 0.011
+          "soh_deviation": 0.0217
         },
         "Cell_3 (B0007)": {
-          "soh_pred": 0.677,
+          "soh_pred": 0.6647,
           "soh_true": 0.7129,
           "temperature_c": 30.21,
           "resistance_ohm": 0.1492,
-          "soh_deviation": -0.0305
+          "soh_deviation": -0.027
         },
         "Cell_4 (B0018)": {
-          "soh_pred": 0.6245,
+          "soh_pred": 0.6104,
           "soh_true": 0.6692,
           "temperature_c": 32.87,
           "resistance_ohm": 0.1608,
-          "soh_deviation": -0.0831
+          "soh_deviation": -0.0812
         }
       }
     },
     {
       "cycle": 41,
-      "pack_soh_mean": 0.7024,
-      "pack_imbalance_delta": 0.1438,
+      "pack_soh_mean": 0.6876,
+      "pack_imbalance_delta": 0.1526,
       "max_temp_c": 33.89,
       "cells": {
         "B0005": {
-          "soh_pred": 0.752,
+          "soh_pred": 0.7051,
           "soh_true": 0.7752,
           "temperature_c": 33.89,
           "resistance_ohm": 0.1312,
-          "soh_deviation": 0.0496
+          "soh_deviation": 0.0175
         },
         "Cell_1 (B0005)": {
-          "soh_pred": 0.7589,
+          "soh_pred": 0.758,
           "soh_true": 0.7736,
           "temperature_c": 24.43,
           "resistance_ohm": 0.1271,
-          "soh_deviation": 0.0565
+          "soh_deviation": 0.0704
         },
         "Cell_2 (B0006)": {
-          "soh_pred": 0.7162,
+          "soh_pred": 0.7087,
           "soh_true": 0.7391,
           "temperature_c": 27.11,
           "resistance_ohm": 0.13886,
-          "soh_deviation": 0.0138
+          "soh_deviation": 0.0212
         },
         "Cell_3 (B0007)": {
-          "soh_pred": 0.6699,
+          "soh_pred": 0.6607,
           "soh_true": 0.7073,
           "temperature_c": 29.21,
           "resistance_ohm": 0.15063,
-          "soh_deviation": -0.0325
+          "soh_deviation": -0.0269
         },
         "Cell_4 (B0018)": {
-          "soh_pred": 0.6151,
+          "soh_pred": 0.6054,
           "soh_true": 0.6626,
           "temperature_c": 33.18,
           "resistance_ohm": 0.1624,
-          "soh_deviation": -0.0873
+          "soh_deviation": -0.0822
         }
       }
     },
     {
       "cycle": 42,
-      "pack_soh_mean": 0.698,
-      "pack_imbalance_delta": 0.1452,
+      "pack_soh_mean": 0.6797,
+      "pack_imbalance_delta": 0.1588,
       "max_temp_c": 33.8,
       "cells": {
         "B0005": {
-          "soh_pred": 0.7498,
+          "soh_pred": 0.6927,
           "soh_true": 0.7707,
           "temperature_c": 33.8,
           "resistance_ohm": 0.1325,
-          "soh_deviation": 0.0518
+          "soh_deviation": 0.013
         },
         "Cell_1 (B0005)": {
-          "soh_pred": 0.7539,
+          "soh_pred": 0.7542,
           "soh_true": 0.7693,
           "temperature_c": 24.36,
           "resistance_ohm": 0.1282,
-          "soh_deviation": 0.0559
+          "soh_deviation": 0.0746
         },
         "Cell_2 (B0006)": {
-          "soh_pred": 0.7069,
+          "soh_pred": 0.7021,
           "soh_true": 0.7336,
           "temperature_c": 26.94,
           "resistance_ohm": 0.14013,
-          "soh_deviation": 0.0089
+          "soh_deviation": 0.0224
         },
         "Cell_3 (B0007)": {
-          "soh_pred": 0.6708,
+          "soh_pred": 0.6539,
           "soh_true": 0.7015,
           "temperature_c": 30.32,
           "resistance_ohm": 0.15206,
-          "soh_deviation": -0.0272
+          "soh_deviation": -0.0257
         },
         "Cell_4 (B0018)": {
-          "soh_pred": 0.6087,
+          "soh_pred": 0.5954,
           "soh_true": 0.657,
           "temperature_c": 33.07,
           "resistance_ohm": 0.16399,
-          "soh_deviation": -0.0893
+          "soh_deviation": -0.0843
         }
       }
     },
     {
       "cycle": 43,
-      "pack_soh_mean": 0.6918,
-      "pack_imbalance_delta": 0.1473,
+      "pack_soh_mean": 0.6793,
+      "pack_imbalance_delta": 0.164,
       "max_temp_c": 33.62,
       "cells": {
         "B0005": {
-          "soh_pred": 0.7442,
+          "soh_pred": 0.7038,
           "soh_true": 0.7662,
           "temperature_c": 33.62,
           "resistance_ohm": 0.13367,
-          "soh_deviation": 0.0524
+          "soh_deviation": 0.0245
         },
         "Cell_1 (B0005)": {
-          "soh_pred": 0.7518,
+          "soh_pred": 0.7544,
           "soh_true": 0.7652,
           "temperature_c": 24.52,
           "resistance_ohm": 0.1293,
-          "soh_deviation": 0.06
+          "soh_deviation": 0.0751
         },
         "Cell_2 (B0006)": {
-          "soh_pred": 0.7015,
+          "soh_pred": 0.6986,
           "soh_true": 0.7284,
           "temperature_c": 27.34,
           "resistance_ohm": 0.14139,
-          "soh_deviation": 0.0097
+          "soh_deviation": 0.0194
         },
         "Cell_3 (B0007)": {
-          "soh_pred": 0.6571,
+          "soh_pred": 0.6491,
           "soh_true": 0.6965,
           "temperature_c": 30.17,
           "resistance_ohm": 0.15349,
-          "soh_deviation": -0.0347
+          "soh_deviation": -0.0302
         },
         "Cell_4 (B0018)": {
-          "soh_pred": 0.6045,
+          "soh_pred": 0.5904,
           "soh_true": 0.6505,
           "temperature_c": 33.61,
           "resistance_ohm": 0.16559,
-          "soh_deviation": -0.0873
+          "soh_deviation": -0.0889
         }
       }
     },
     {
       "cycle": 44,
-      "pack_soh_mean": 0.6888,
-      "pack_imbalance_delta": 0.1573,
+      "pack_soh_mean": 0.6721,
+      "pack_imbalance_delta": 0.1616,
       "max_temp_c": 33.89,
       "cells": {
         "B0005": {
-          "soh_pred": 0.746,
+          "soh_pred": 0.7006,
           "soh_true": 0.7617,
           "temperature_c": 33.89,
           "resistance_ohm": 0.13473,
-          "soh_deviation": 0.0572
+          "soh_deviation": 0.0286
         },
         "Cell_1 (B0005)": {
-          "soh_pred": 0.7517,
+          "soh_pred": 0.7436,
           "soh_true": 0.7607,
           "temperature_c": 24.08,
           "resistance_ohm": 0.1304,
-          "soh_deviation": 0.0628
+          "soh_deviation": 0.0715
         },
         "Cell_2 (B0006)": {
-          "soh_pred": 0.7008,
+          "soh_pred": 0.6906,
           "soh_true": 0.7229,
           "temperature_c": 27.42,
           "resistance_ohm": 0.14266,
-          "soh_deviation": 0.012
+          "soh_deviation": 0.0185
         },
         "Cell_3 (B0007)": {
-          "soh_pred": 0.6513,
+          "soh_pred": 0.6436,
           "soh_true": 0.6914,
           "temperature_c": 30.04,
           "resistance_ohm": 0.15492,
-          "soh_deviation": -0.0375
+          "soh_deviation": -0.0285
         },
         "Cell_4 (B0018)": {
-          "soh_pred": 0.5943,
+          "soh_pred": 0.5819,
           "soh_true": 0.6439,
           "temperature_c": 33.3,
           "resistance_ohm": 0.16718,
-          "soh_deviation": -0.0945
+          "soh_deviation": -0.0901
         }
       }
     },
     {
       "cycle": 45,
-      "pack_soh_mean": 0.6837,
-      "pack_imbalance_delta": 0.1532,
+      "pack_soh_mean": 0.673,
+      "pack_imbalance_delta": 0.1647,
       "max_temp_c": 34.25,
       "cells": {
         "B0005": {
-          "soh_pred": 0.7456,
+          "soh_pred": 0.7146,
           "soh_true": 0.7567,
           "temperature_c": 34.25,
           "resistance_ohm": 0.13635,
-          "soh_deviation": 0.0619
+          "soh_deviation": 0.0416
         },
         "Cell_1 (B0005)": {
-          "soh_pred": 0.7397,
+          "soh_pred": 0.7425,
           "soh_true": 0.7571,
           "temperature_c": 24.11,
           "resistance_ohm": 0.1315,
-          "soh_deviation": 0.056
+          "soh_deviation": 0.0695
         },
         "Cell_2 (B0006)": {
-          "soh_pred": 0.6885,
+          "soh_pred": 0.6881,
           "soh_true": 0.7176,
           "temperature_c": 26.87,
           "resistance_ohm": 0.14392,
-          "soh_deviation": 0.0049
+          "soh_deviation": 0.0151
         },
         "Cell_3 (B0007)": {
-          "soh_pred": 0.6522,
+          "soh_pred": 0.642,
           "soh_true": 0.6865,
           "temperature_c": 29.28,
           "resistance_ohm": 0.15635,
-          "soh_deviation": -0.0314
+          "soh_deviation": -0.031
         },
         "Cell_4 (B0018)": {
-          "soh_pred": 0.5923,
+          "soh_pred": 0.5778,
           "soh_true": 0.6377,
           "temperature_c": 33.16,
           "resistance_ohm": 0.16878,
-          "soh_deviation": -0.0913
+          "soh_deviation": -0.0952
         }
       }
     },
     {
       "cycle": 46,
-      "pack_soh_mean": 0.6807,
-      "pack_imbalance_delta": 0.1603,
+      "pack_soh_mean": 0.667,
+      "pack_imbalance_delta": 0.165,
       "max_temp_c": 34.12,
       "cells": {
         "B0005": {
-          "soh_pred": 0.7434,
+          "soh_pred": 0.7024,
           "soh_true": 0.7518,
           "temperature_c": 34.12,
           "resistance_ohm": 0.13732,
-          "soh_deviation": 0.0627
+          "soh_deviation": 0.0354
         },
         "Cell_1 (B0005)": {
           "soh_pred": 0.7386,
           "soh_true": 0.7533,
           "temperature_c": 23.74,
           "resistance_ohm": 0.1326,
-          "soh_deviation": 0.0579
+          "soh_deviation": 0.0716
         },
         "Cell_2 (B0006)": {
-          "soh_pred": 0.6913,
+          "soh_pred": 0.6815,
           "soh_true": 0.713,
           "temperature_c": 27.13,
           "resistance_ohm": 0.14519,
-          "soh_deviation": 0.0106
+          "soh_deviation": 0.0145
         },
         "Cell_3 (B0007)": {
-          "soh_pred": 0.6471,
+          "soh_pred": 0.6389,
           "soh_true": 0.6811,
           "temperature_c": 29.95,
           "resistance_ohm": 0.15778,
-          "soh_deviation": -0.0336
+          "soh_deviation": -0.0281
         },
         "Cell_4 (B0018)": {
-          "soh_pred": 0.583,
+          "soh_pred": 0.5736,
           "soh_true": 0.6309,
           "temperature_c": 32.47,
           "resistance_ohm": 0.17037,
-          "soh_deviation": -0.0977
+          "soh_deviation": -0.0934
         }
       }
     },
     {
       "cycle": 47,
-      "pack_soh_mean": 0.6773,
-      "pack_imbalance_delta": 0.1695,
+      "pack_soh_mean": 0.6658,
+      "pack_imbalance_delta": 0.1692,
       "max_temp_c": 34.27,
       "cells": {
         "B0005": {
-          "soh_pred": 0.7431,
+          "soh_pred": 0.7254,
           "soh_true": 0.7472,
           "temperature_c": 34.27,
           "resistance_ohm": 0.13841,
-          "soh_deviation": 0.0658
+          "soh_deviation": 0.0596
         },
         "Cell_1 (B0005)": {
-          "soh_pred": 0.742,
+          "soh_pred": 0.7328,
           "soh_true": 0.7495,
           "temperature_c": 23.57,
           "resistance_ohm": 0.1337,
-          "soh_deviation": 0.0646
+          "soh_deviation": 0.067
         },
         "Cell_2 (B0006)": {
-          "soh_pred": 0.6845,
+          "soh_pred": 0.6746,
           "soh_true": 0.7076,
           "temperature_c": 26.91,
           "resistance_ohm": 0.14645,
-          "soh_deviation": 0.0072
+          "soh_deviation": 0.0088
         },
         "Cell_3 (B0007)": {
-          "soh_pred": 0.6434,
+          "soh_pred": 0.6324,
           "soh_true": 0.6758,
           "temperature_c": 29.53,
           "resistance_ohm": 0.15921,
-          "soh_deviation": -0.0339
+          "soh_deviation": -0.0334
         },
         "Cell_4 (B0018)": {
-          "soh_pred": 0.5736,
+          "soh_pred": 0.5636,
           "soh_true": 0.6249,
           "temperature_c": 32.69,
           "resistance_ohm": 0.17197,
-          "soh_deviation": -0.1037
+          "soh_deviation": -0.1021
         }
       }
     },
     {
       "cycle": 48,
-      "pack_soh_mean": 0.6719,
-      "pack_imbalance_delta": 0.17,
+      "pack_soh_mean": 0.6575,
+      "pack_imbalance_delta": 0.1742,
       "max_temp_c": 33.74,
       "cells": {
         "B0005": {
-          "soh_pred": 0.7385,
+          "soh_pred": 0.704,
           "soh_true": 0.7506,
           "temperature_c": 33.74,
           "resistance_ohm": 0.13952,
-          "soh_deviation": 0.0666
+          "soh_deviation": 0.0464
         },
         "Cell_1 (B0005)": {
-          "soh_pred": 0.7365,
+          "soh_pred": 0.7303,
           "soh_true": 0.7441,
           "temperature_c": 24.53,
           "resistance_ohm": 0.1348,
-          "soh_deviation": 0.0646
+          "soh_deviation": 0.0728
         },
         "Cell_2 (B0006)": {
-          "soh_pred": 0.6797,
+          "soh_pred": 0.6732,
           "soh_true": 0.7022,
           "temperature_c": 27.58,
           "resistance_ohm": 0.14772,
-          "soh_deviation": 0.0078
+          "soh_deviation": 0.0156
         },
         "Cell_3 (B0007)": {
-          "soh_pred": 0.6361,
+          "soh_pred": 0.6242,
           "soh_true": 0.6705,
           "temperature_c": 30.11,
           "resistance_ohm": 0.16064,
-          "soh_deviation": -0.0357
+          "soh_deviation": -0.0334
         },
         "Cell_4 (B0018)": {
-          "soh_pred": 0.5685,
+          "soh_pred": 0.5561,
           "soh_true": 0.6186,
           "temperature_c": 33.49,
           "resistance_ohm": 0.17356,
-          "soh_deviation": -0.1034
+          "soh_deviation": -0.1014
         }
       }
     },
     {
       "cycle": 49,
-      "pack_soh_mean": 0.6654,
-      "pack_imbalance_delta": 0.1785,
+      "pack_soh_mean": 0.6555,
+      "pack_imbalance_delta": 0.1691,
       "max_temp_c": 33.83,
       "cells": {
         "B0005": {
-          "soh_pred": 0.7411,
+          "soh_pred": 0.7122,
           "soh_true": 0.7463,
           "temperature_c": 33.83,
           "resistance_ohm": 0.14075,
-          "soh_deviation": 0.0757
+          "soh_deviation": 0.0568
         },
         "Cell_1 (B0005)": {
-          "soh_pred": 0.7277,
+          "soh_pred": 0.7242,
           "soh_true": 0.7389,
           "temperature_c": 23.51,
           "resistance_ohm": 0.1359,
-          "soh_deviation": 0.0623
+          "soh_deviation": 0.0687
         },
         "Cell_2 (B0006)": {
-          "soh_pred": 0.6658,
+          "soh_pred": 0.667,
           "soh_true": 0.6978,
           "temperature_c": 26.67,
           "resistance_ohm": 0.14898,
-          "soh_deviation": 0.0004
+          "soh_deviation": 0.0116
         },
         "Cell_3 (B0007)": {
-          "soh_pred": 0.6298,
+          "soh_pred": 0.6188,
           "soh_true": 0.665,
           "temperature_c": 30.07,
           "resistance_ohm": 0.16207,
-          "soh_deviation": -0.0356
+          "soh_deviation": -0.0367
         },
         "Cell_4 (B0018)": {
-          "soh_pred": 0.5626,
+          "soh_pred": 0.5551,
           "soh_true": 0.6127,
           "temperature_c": 32.04,
           "resistance_ohm": 0.17516,
-          "soh_deviation": -0.1028
+          "soh_deviation": -0.1004
         }
       }
     },
     {
       "cycle": 50,
-      "pack_soh_mean": 0.6638,
-      "pack_imbalance_delta": 0.1779,
+      "pack_soh_mean": 0.6413,
+      "pack_imbalance_delta": 0.1797,
       "max_temp_c": 33.77,
       "cells": {
         "B0005": {
-          "soh_pred": 0.7402,
+          "soh_pred": 0.6558,
           "soh_true": 0.7421,
           "temperature_c": 33.77,
           "resistance_ohm": 0.14184,
-          "soh_deviation": 0.0764
+          "soh_deviation": 0.0145
         },
         "Cell_1 (B0005)": {
-          "soh_pred": 0.7232,
+          "soh_pred": 0.7246,
           "soh_true": 0.7346,
           "temperature_c": 23.48,
           "resistance_ohm": 0.137,
-          "soh_deviation": 0.0595
+          "soh_deviation": 0.0834
         },
         "Cell_2 (B0006)": {
-          "soh_pred": 0.6724,
+          "soh_pred": 0.6656,
           "soh_true": 0.693,
           "temperature_c": 27.12,
           "resistance_ohm": 0.15025,
-          "soh_deviation": 0.0087
+          "soh_deviation": 0.0244
         },
         "Cell_3 (B0007)": {
-          "soh_pred": 0.6207,
+          "soh_pred": 0.6154,
           "soh_true": 0.6598,
           "temperature_c": 30.47,
           "resistance_ohm": 0.1635,
-          "soh_deviation": -0.0431
+          "soh_deviation": -0.0259
         },
         "Cell_4 (B0018)": {
-          "soh_pred": 0.5623,
+          "soh_pred": 0.545,
           "soh_true": 0.6068,
           "temperature_c": 33.37,
           "resistance_ohm": 0.17675,
-          "soh_deviation": -0.1015
+          "soh_deviation": -0.0963
         }
       }
     },
     {
       "cycle": 51,
-      "pack_soh_mean": 0.6601,
-      "pack_imbalance_delta": 0.1866,
+      "pack_soh_mean": 0.6403,
+      "pack_imbalance_delta": 0.1768,
       "max_temp_c": 33.89,
       "cells": {
         "B0005": {
-          "soh_pred": 0.7395,
+          "soh_pred": 0.6805,
           "soh_true": 0.7378,
           "temperature_c": 33.89,
           "resistance_ohm": 0.1433,
-          "soh_deviation": 0.0794
+          "soh_deviation": 0.0402
         },
         "Cell_1 (B0005)": {
-          "soh_pred": 0.7202,
+          "soh_pred": 0.7162,
           "soh_true": 0.7307,
           "temperature_c": 23.63,
           "resistance_ohm": 0.1381,
-          "soh_deviation": 0.06
+          "soh_deviation": 0.076
         },
         "Cell_2 (B0006)": {
-          "soh_pred": 0.6666,
+          "soh_pred": 0.6576,
           "soh_true": 0.6883,
           "temperature_c": 27.54,
           "resistance_ohm": 0.15151,
-          "soh_deviation": 0.0064
+          "soh_deviation": 0.0174
         },
         "Cell_3 (B0007)": {
-          "soh_pred": 0.6214,
+          "soh_pred": 0.6075,
           "soh_true": 0.6548,
           "temperature_c": 30.2,
           "resistance_ohm": 0.16493,
-          "soh_deviation": -0.0387
+          "soh_deviation": -0.0328
         },
         "Cell_4 (B0018)": {
-          "soh_pred": 0.5529,
+          "soh_pred": 0.5395,
           "soh_true": 0.6003,
           "temperature_c": 33.17,
           "resistance_ohm": 0.17835,
-          "soh_deviation": -0.1072
+          "soh_deviation": -0.1008
         }
       }
     },
     {
       "cycle": 52,
-      "pack_soh_mean": 0.655,
-      "pack_imbalance_delta": 0.193,
+      "pack_soh_mean": 0.6357,
+      "pack_imbalance_delta": 0.1754,
       "max_temp_c": 33.92,
       "cells": {
         "B0005": {
-          "soh_pred": 0.7397,
+          "soh_pred": 0.6773,
           "soh_true": 0.7342,
           "temperature_c": 33.92,
           "resistance_ohm": 0.14455,
-          "soh_deviation": 0.0847
+          "soh_deviation": 0.0416
         },
         "Cell_1 (B0005)": {
-          "soh_pred": 0.716,
+          "soh_pred": 0.7105,
           "soh_true": 0.7259,
           "temperature_c": 23.84,
           "resistance_ohm": 0.1392,
-          "soh_deviation": 0.0609
+          "soh_deviation": 0.0748
         },
         "Cell_2 (B0006)": {
-          "soh_pred": 0.6587,
+          "soh_pred": 0.6516,
           "soh_true": 0.6832,
           "temperature_c": 27.02,
           "resistance_ohm": 0.15278,
-          "soh_deviation": 0.0037
+          "soh_deviation": 0.0159
         },
         "Cell_3 (B0007)": {
-          "soh_pred": 0.614,
+          "soh_pred": 0.604,
           "soh_true": 0.6487,
           "temperature_c": 30.19,
           "resistance_ohm": 0.16636,
-          "soh_deviation": -0.041
+          "soh_deviation": -0.0317
         },
         "Cell_4 (B0018)": {
-          "soh_pred": 0.5467,
+          "soh_pred": 0.5351,
           "soh_true": 0.5943,
           "temperature_c": 32.49,
           "resistance_ohm": 0.17994,
-          "soh_deviation": -0.1083
+          "soh_deviation": -0.1006
         }
       }
     },
     {
       "cycle": 53,
-      "pack_soh_mean": 0.6517,
-      "pack_imbalance_delta": 0.1941,
+      "pack_soh_mean": 0.631,
+      "pack_imbalance_delta": 0.1798,
       "max_temp_c": 34.24,
       "cells": {
         "B0005": {
-          "soh_pred": 0.7401,
+          "soh_pred": 0.6701,
           "soh_true": 0.7296,
           "temperature_c": 34.24,
           "resistance_ohm": 0.14584,
-          "soh_deviation": 0.0884
+          "soh_deviation": 0.0392
         },
         "Cell_1 (B0005)": {
-          "soh_pred": 0.7066,
+          "soh_pred": 0.708,
           "soh_true": 0.7211,
           "temperature_c": 24.24,
           "resistance_ohm": 0.1403,
-          "soh_deviation": 0.0549
+          "soh_deviation": 0.077
         },
         "Cell_2 (B0006)": {
-          "soh_pred": 0.6547,
+          "soh_pred": 0.6487,
           "soh_true": 0.6791,
           "temperature_c": 26.47,
           "resistance_ohm": 0.15404,
-          "soh_deviation": 0.003
+          "soh_deviation": 0.0178
         },
         "Cell_3 (B0007)": {
-          "soh_pred": 0.6112,
+          "soh_pred": 0.5997,
           "soh_true": 0.6433,
           "temperature_c": 29.79,
           "resistance_ohm": 0.16779,
-          "soh_deviation": -0.0405
+          "soh_deviation": -0.0312
         },
         "Cell_4 (B0018)": {
-          "soh_pred": 0.5459,
+          "soh_pred": 0.5282,
           "soh_true": 0.5879,
           "temperature_c": 32.67,
           "resistance_ohm": 0.18154,
+          "soh_deviation": -0.1027
+        }
+      }
+    },
+    {
+      "cycle": 54,
+      "pack_soh_mean": 0.6235,
+      "pack_imbalance_delta": 0.1789,
+      "max_temp_c": 33.88,
+      "cells": {
+        "B0005": {
+          "soh_pred": 0.6609,
+          "soh_true": 0.7261,
+          "temperature_c": 33.88,
+          "resistance_ohm": 0.14707,
+          "soh_deviation": 0.0374
+        },
+        "Cell_1 (B0005)": {
+          "soh_pred": 0.7,
+          "soh_true": 0.7157,
+          "temperature_c": 23.41,
+          "resistance_ohm": 0.1414,
+          "soh_deviation": 0.0765
+        },
+        "Cell_2 (B0006)": {
+          "soh_pred": 0.6442,
+          "soh_true": 0.674,
+          "temperature_c": 26.15,
+          "resistance_ohm": 0.15531,
+          "soh_deviation": 0.0207
+        },
+        "Cell_3 (B0007)": {
+          "soh_pred": 0.5913,
+          "soh_true": 0.6373,
+          "temperature_c": 29.43,
+          "resistance_ohm": 0.16922,
+          "soh_deviation": -0.0322
+        },
+        "Cell_4 (B0018)": {
+          "soh_pred": 0.5212,
+          "soh_true": 0.5806,
+          "temperature_c": 33.23,
+          "resistance_ohm": 0.18313,
+          "soh_deviation": -0.1024
+        }
+      }
+    },
+    {
+      "cycle": 55,
+      "pack_soh_mean": 0.6192,
+      "pack_imbalance_delta": 0.1825,
+      "max_temp_c": 34.09,
+      "cells": {
+        "B0005": {
+          "soh_pred": 0.6545,
+          "soh_true": 0.7214,
+          "temperature_c": 34.09,
+          "resistance_ohm": 0.14836,
+          "soh_deviation": 0.0353
+        },
+        "Cell_1 (B0005)": {
+          "soh_pred": 0.6988,
+          "soh_true": 0.7108,
+          "temperature_c": 24.46,
+          "resistance_ohm": 0.1425,
+          "soh_deviation": 0.0796
+        },
+        "Cell_2 (B0006)": {
+          "soh_pred": 0.6367,
+          "soh_true": 0.6686,
+          "temperature_c": 26.94,
+          "resistance_ohm": 0.15657,
+          "soh_deviation": 0.0174
+        },
+        "Cell_3 (B0007)": {
+          "soh_pred": 0.5899,
+          "soh_true": 0.6322,
+          "temperature_c": 29.84,
+          "resistance_ohm": 0.17065,
+          "soh_deviation": -0.0293
+        },
+        "Cell_4 (B0018)": {
+          "soh_pred": 0.5163,
+          "soh_true": 0.575,
+          "temperature_c": 32.76,
+          "resistance_ohm": 0.18473,
+          "soh_deviation": -0.1029
+        }
+      }
+    },
+    {
+      "cycle": 56,
+      "pack_soh_mean": 0.6212,
+      "pack_imbalance_delta": 0.1771,
+      "max_temp_c": 34.06,
+      "cells": {
+        "B0005": {
+          "soh_pred": 0.684,
+          "soh_true": 0.7168,
+          "temperature_c": 34.06,
+          "resistance_ohm": 0.14965,
+          "soh_deviation": 0.0628
+        },
+        "Cell_1 (B0005)": {
+          "soh_pred": 0.6924,
+          "soh_true": 0.707,
+          "temperature_c": 24.4,
+          "resistance_ohm": 0.1436,
+          "soh_deviation": 0.0713
+        },
+        "Cell_2 (B0006)": {
+          "soh_pred": 0.6309,
+          "soh_true": 0.6621,
+          "temperature_c": 27.92,
+          "resistance_ohm": 0.15784,
+          "soh_deviation": 0.0097
+        },
+        "Cell_3 (B0007)": {
+          "soh_pred": 0.5832,
+          "soh_true": 0.6261,
+          "temperature_c": 30.15,
+          "resistance_ohm": 0.17208,
+          "soh_deviation": -0.038
+        },
+        "Cell_4 (B0018)": {
+          "soh_pred": 0.5154,
+          "soh_true": 0.575,
+          "temperature_c": 32.9,
+          "resistance_ohm": 0.18632,
           "soh_deviation": -0.1058
+        }
+      }
+    },
+    {
+      "cycle": 57,
+      "pack_soh_mean": 0.6128,
+      "pack_imbalance_delta": 0.1663,
+      "max_temp_c": 34.0,
+      "cells": {
+        "B0005": {
+          "soh_pred": 0.6697,
+          "soh_true": 0.712,
+          "temperature_c": 34.0,
+          "resistance_ohm": 0.15106,
+          "soh_deviation": 0.0569
+        },
+        "Cell_1 (B0005)": {
+          "soh_pred": 0.6808,
+          "soh_true": 0.7026,
+          "temperature_c": 23.91,
+          "resistance_ohm": 0.1447,
+          "soh_deviation": 0.068
+        },
+        "Cell_2 (B0006)": {
+          "soh_pred": 0.6272,
+          "soh_true": 0.6573,
+          "temperature_c": 26.96,
+          "resistance_ohm": 0.1591,
+          "soh_deviation": 0.0144
+        },
+        "Cell_3 (B0007)": {
+          "soh_pred": 0.5718,
+          "soh_true": 0.621,
+          "temperature_c": 29.88,
+          "resistance_ohm": 0.17351,
+          "soh_deviation": -0.041
+        },
+        "Cell_4 (B0018)": {
+          "soh_pred": 0.5146,
+          "soh_true": 0.575,
+          "temperature_c": 33.07,
+          "resistance_ohm": 0.18792,
+          "soh_deviation": -0.0983
+        }
+      }
+    },
+    {
+      "cycle": 58,
+      "pack_soh_mean": 0.6163,
+      "pack_imbalance_delta": 0.1753,
+      "max_temp_c": 34.39,
+      "cells": {
+        "B0005": {
+          "soh_pred": 0.6899,
+          "soh_true": 0.7081,
+          "temperature_c": 34.39,
+          "resistance_ohm": 0.15235,
+          "soh_deviation": 0.0735
+        },
+        "Cell_1 (B0005)": {
+          "soh_pred": 0.6864,
+          "soh_true": 0.6988,
+          "temperature_c": 23.71,
+          "resistance_ohm": 0.1458,
+          "soh_deviation": 0.0701
+        },
+        "Cell_2 (B0006)": {
+          "soh_pred": 0.6215,
+          "soh_true": 0.652,
+          "temperature_c": 27.68,
+          "resistance_ohm": 0.16037,
+          "soh_deviation": 0.0052
+        },
+        "Cell_3 (B0007)": {
+          "soh_pred": 0.5693,
+          "soh_true": 0.6158,
+          "temperature_c": 29.72,
+          "resistance_ohm": 0.17494,
+          "soh_deviation": -0.047
+        },
+        "Cell_4 (B0018)": {
+          "soh_pred": 0.5145,
+          "soh_true": 0.575,
+          "temperature_c": 33.76,
+          "resistance_ohm": 0.18951,
+          "soh_deviation": -0.1018
+        }
+      }
+    },
+    {
+      "cycle": 59,
+      "pack_soh_mean": 0.6133,
+      "pack_imbalance_delta": 0.1769,
+      "max_temp_c": 34.08,
+      "cells": {
+        "B0005": {
+          "soh_pred": 0.6874,
+          "soh_true": 0.7039,
+          "temperature_c": 34.08,
+          "resistance_ohm": 0.15358,
+          "soh_deviation": 0.0741
+        },
+        "Cell_1 (B0005)": {
+          "soh_pred": 0.6829,
+          "soh_true": 0.6935,
+          "temperature_c": 24.0,
+          "resistance_ohm": 0.1469,
+          "soh_deviation": 0.0696
+        },
+        "Cell_2 (B0006)": {
+          "soh_pred": 0.6202,
+          "soh_true": 0.6479,
+          "temperature_c": 26.29,
+          "resistance_ohm": 0.16163,
+          "soh_deviation": 0.0069
+        },
+        "Cell_3 (B0007)": {
+          "soh_pred": 0.5655,
+          "soh_true": 0.6098,
+          "temperature_c": 29.45,
+          "resistance_ohm": 0.17637,
+          "soh_deviation": -0.0478
+        },
+        "Cell_4 (B0018)": {
+          "soh_pred": 0.5106,
+          "soh_true": 0.575,
+          "temperature_c": 33.31,
+          "resistance_ohm": 0.19111,
+          "soh_deviation": -0.1027
+        }
+      }
+    },
+    {
+      "cycle": 60,
+      "pack_soh_mean": 0.6071,
+      "pack_imbalance_delta": 0.1604,
+      "max_temp_c": 33.9,
+      "cells": {
+        "B0005": {
+          "soh_pred": 0.6687,
+          "soh_true": 0.7002,
+          "temperature_c": 33.9,
+          "resistance_ohm": 0.155,
+          "soh_deviation": 0.0616
+        },
+        "Cell_1 (B0005)": {
+          "soh_pred": 0.6747,
+          "soh_true": 0.6889,
+          "temperature_c": 23.68,
+          "resistance_ohm": 0.148,
+          "soh_deviation": 0.0676
+        },
+        "Cell_2 (B0006)": {
+          "soh_pred": 0.617,
+          "soh_true": 0.6433,
+          "temperature_c": 27.23,
+          "resistance_ohm": 0.1629,
+          "soh_deviation": 0.0099
+        },
+        "Cell_3 (B0007)": {
+          "soh_pred": 0.5609,
+          "soh_true": 0.6035,
+          "temperature_c": 30.33,
+          "resistance_ohm": 0.1778,
+          "soh_deviation": -0.0462
+        },
+        "Cell_4 (B0018)": {
+          "soh_pred": 0.5143,
+          "soh_true": 0.575,
+          "temperature_c": 33.15,
+          "resistance_ohm": 0.1927,
+          "soh_deviation": -0.0928
         }
       }
     }
