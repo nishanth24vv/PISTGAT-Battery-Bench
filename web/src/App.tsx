@@ -147,7 +147,7 @@ export function App() {
                 v0.1.0 3D Twin
               </span>
             </div>
-            <p className="text-xs text-slate-400">Physics-Informed Graph Attention SOH Benchmark</p>
+            <p className="text-xs text-slate-400">Customizable 3D Pack Twin • Physics-Informed SOH Benchmark</p>
           </div>
         </div>
 
@@ -329,7 +329,7 @@ export function App() {
 
       {/* Footer */}
       <footer className="border-t border-slate-800/80 bg-slate-950 text-slate-500 text-xs py-4 px-6 text-center">
-        PISTGAT-Battery-Bench • Unified Lithium-Ion SOH Benchmark and 3D Pack Imbalance Visualizer • Open-Source MIT
+        PISTGAT-Battery-Bench • Unified Li-Ion SOH Benchmark & Customizable 3D Pack Visualizer • Open-Source MIT
       </footer>
     </div>
   );

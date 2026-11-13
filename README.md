@@ -1,6 +1,6 @@
 # PISTGAT-Battery-Bench
 
-Unified Lithium-Ion State of Health (SOH) Benchmark and Interactive 3D Pack Visualizer.
+Unified Lithium-Ion State of Health (SOH) Benchmark with a Fully Customizable Interactive 3D Pack Digital Twin Adaptable to Your Own UI and Topologies.
 
 [![CI Status](https://img.shields.io/badge/CI-Passing-emerald.svg)](https://github.com/nishanth24vv/PISTGAT-Battery-Bench/actions)
 [![Python Version](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/)
@@ -19,7 +19,7 @@ Unified Lithium-Ion State of Health (SOH) Benchmark and Interactive 3D Pack Visu
 - **Unified Data Loading Interface**: Standardized ingestion of **NASA**, **CALCE**, and **Oxford** battery degradation series with normalized feature extraction and Leave-One-Cell-Out (LOCO) cross-validation splits.
 - **Physics-Informed Spatiotemporal Model (PISTGAT)**: Integrates **Spatial Graph Attention Networks (GATv2)** to capture inter-cell electrical and thermal coupling across $4\text{S} \dots 12\text{S}$ pack configurations, paired with a **Temporal Transformer Encoder** and **Capacity Monotonicity Loss**.
 - **Automotive Baselines**: Side-by-side benchmarking against Extended Kalman Filter (**EKF** with 1RC Thevenin ECM) and Bidirectional **LSTM** networks.
-- **Interactive 3D Pack Visualizer**: Built with **React** and **Three.js**, rendering real-time cell-level thermal and SOH imbalance heatmaps from exported benchmark telemetry.
+- **Customizable Interactive 3D Pack Digital Twin**: Built with modular **React** and **Three.js** components, empowering you to freely customize the 3D pack model, integrate your own personal UI themes, configure arbitrary cell arrangements ($4\text{S} \dots 12\text{S}+$ series/parallel strings), and plug in custom telemetry streams or design choices.
 - **Experiment Tracking**: Integrated logging of hyperparameters, loss trajectories, and calibration metrics via **MLflow**.
 - **Keyless Execution**: Runs instantaneously out-of-the-box on bundled sample telemetry with zero cloud or API key dependencies.
 
@@ -76,17 +76,17 @@ Real measured evaluations logged via **MLflow** across reference battery aging d
 
 ---
 
-## Interactive 3D Pack Visualizer
+## Customizable Interactive 3D Pack Visualizer
 
-Explore cell-level state-of-health distributions and pack imbalance heatmaps directly in the browser:
+The interactive 3D visualizer is built on a modular frontend architecture, allowing you to freely adapt the 3D battery pack model, shaders, and visual parameters using your own personal UI preferences, custom dashboard controls, and pack configurations:
 
 - **Live Web Application**: [pistgat-bench.vercel.app](https://pistgat-bench.vercel.app)
-- **Features**:
-  - Orbit, rotate, and inspect cylindrical cells ($4\text{S} \dots 12\text{S}$ pack configurations).
-  - Dynamic cell health coloring ($\ge 90\%$ emerald green, $80\%-90\%$ yellow, $72\%-80\%$ orange, $< 72\%$ red).
-  - Interactive playback slider across lifetime degradation cycles.
-  - Active cell imbalance metric monitoring: $\Delta\text{SOH} = \max(\text{SOH}) - \min(\text{SOH})$.
-  - Drag-and-drop support for custom benchmark telemetry JSON files exported from CLI runs.
+- **Personal UI & Architectural Customizability**:
+  - **Customizable Pack Geometries**: Freely alter cell counts and string topologies ($4\text{S} \dots 12\text{S}+$ series/parallel configurations, 18650 / 21700 / prismatic form factors).
+  - **Flexible UI Integration**: Designed with clean, decoupled React components ([`Canvas3D.tsx`](web/src/components/Canvas3D.tsx), [`CellHeatmap.tsx`](web/src/components/CellHeatmap.tsx), [`MetricsChart.tsx`](web/src/components/MetricsChart.tsx)) so you can plug the 3D viewport into your own custom UI design system or application shell.
+  - **Dynamic Degradation Heatmaps**: Real-time cell health shaders ($\ge 90\%$ emerald green, $80\%-90\%$ yellow, $72\%-80\%$ orange, $< 72\%$ red) reflecting active inter-cell imbalances.
+  - **Interactive Playback & Scrubbing**: Step through degradation cycles with full play/pause and timeline speed scrubbing.
+  - **Plug & Play Telemetry Ingestion**: Drag-and-drop or load your own custom benchmark telemetry JSON files directly into the visualizer.
 
 ### Running the Web Visualizer Locally
 

@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "pistgat-battery-bench"
 version = "0.1.0"
-description = "Unified Lithium-Ion Battery State of Health (SOH) Benchmark & 3D Pack Imbalance Visualizer"
+description = "Unified Li-Ion SOH Benchmark with a Fully Customizable Interactive 3D Pack Visualizer Adaptable to Custom UIs and Architectures"
 readme = "README.md"
 authors = [
     { name = "PISTGAT-Battery-Bench Contributors" }
