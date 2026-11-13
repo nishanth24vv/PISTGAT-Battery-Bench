@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+message: "If you use this benchmark suite or visualizer in your research, please cite it as below."
+authors:
+  - family-names: "PISTGAT-Battery-Bench Contributors"
+title: "PISTGAT-Battery-Bench: Unified Li-Ion SOH Benchmark and 3D Pack Visualizer"
+version: 0.1.0
+date-released: 2026-11-13
+url: "https://github.com/pistgat-battery-bench/pistgat-battery-bench"

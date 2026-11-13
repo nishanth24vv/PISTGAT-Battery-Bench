@@ -1,0 +1,66 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pistgat-battery-bench"
+version = "0.1.0"
+description = "Unified Lithium-Ion Battery State of Health (SOH) Benchmark & 3D Pack Imbalance Visualizer"
+readme = "README.md"
+authors = [
+    { name = "PISTGAT-Battery-Bench Contributors" }
+]
+license = { text = "MIT" }
+requires-python = ">=3.10"
+keywords = [
+    "battery-management",
+    "soh-estimation",
+    "physics-informed-neural-networks",
+    "pytorch-geometric",
+    "graph-attention-networks",
+    "digital-twin",
+    "lithium-ion"
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12"
+]
+dependencies = [
+    "torch>=2.0.0",
+    "torch-geometric>=2.3.0",
+    "numpy>=1.22.0",
+    "scipy>=1.9.0",
+    "scikit-learn>=1.2.0",
+    "pandas>=1.5.0",
+    "mlflow>=2.5.0",
+    "typer>=0.9.0",
+    "rich>=13.0.0",
+    "pydantic>=2.0.0"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-cov>=4.0.0",
+    "black>=23.0.0",
+    "ruff>=0.1.0"
+]
+
+[project.scripts]
+pistgat-bench = "pistgat_bench.cli:app"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["pistgat_bench*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
